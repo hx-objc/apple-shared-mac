@@ -18,6 +18,7 @@ import hxmc.unsafe.Ptr;
 	public var ref : Ptr;
 	public var forkInfo : Ptr;
 	public var forkName : Ptr;
+	@:hxmc.unsafe
 	public inline function new(qLink:Ptr, qType:Int16, ioTrap:Int16, ioCmdAddr:Ptr, ioCompletion:Ptr, ioResult:Int16, desiredRefNum:Int, volumeRefNum:Int16, iterator:Int, actualRefNum:Int16, ref:Ptr, forkInfo:Ptr, forkName:Ptr) {
 		this.qLink = qLink;
 		this.qType = qType;

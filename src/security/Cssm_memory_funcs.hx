@@ -9,6 +9,7 @@ import hxmc.unsafe.Ptr;
 	public var realloc_func : Ptr;
 	public var calloc_func : Ptr;
 	public var AllocRef : Ptr;
+	@:hxmc.unsafe
 	public inline function new(malloc_func:Ptr, free_func:Ptr, realloc_func:Ptr, calloc_func:Ptr, AllocRef:Ptr) {
 		this.malloc_func = malloc_func;
 		this.free_func = free_func;

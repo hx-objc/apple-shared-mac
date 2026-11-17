@@ -7,14 +7,23 @@ import foundation.NSString;
 import hxmc.unsafe.Ptr;
 import objc.NSObjectProtocol;
 
-@:hxmc.objc("CMIOExtensionStreamSource") extern interface CMIOExtensionStreamSource extends NSObjectProtocol {
+@:hxmc.objc("CMIOExtensionStreamSource") @:hxmc.available(macos >= 12.3, maccatalyst >= 15.4) extern interface CMIOExtensionStreamSource extends NSObjectProtocol {
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var formats(get, never) : NSArray<CMIOExtensionStreamFormat>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_formats():NSArray<CMIOExtensionStreamFormat>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var availableProperties(get, never) : NSSet<NSString>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_availableProperties():NSSet<NSString>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function streamPropertiesForProperties(properties:NSSet<NSString>, error:Ptr):Null<CMIOExtensionStreamProperties>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function setStreamProperties(streamProperties:CMIOExtensionStreamProperties, error:Ptr):Bool;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function authorizedToStartStreamForClient(client:CMIOExtensionClient):Bool;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function startStreamAndReturnError(outError:Ptr):Bool;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function stopStreamAndReturnError(outError:Ptr):Bool;
 }

@@ -18,6 +18,7 @@ import hxmc.unsafe.UInt16;
 	public var positionMode : UInt16;
 	public var positionOffset : I64;
 	public var rangeStart : I64;
+	@:hxmc.unsafe
 	public inline function new(qLink:Ptr, qType:Int16, ioTrap:Int16, ioCmdAddr:Ptr, ioCompletion:Ptr, ioResult:Int16, forkRefNum:Int, requestCount:I64, positionMode:UInt16, positionOffset:I64, rangeStart:I64) {
 		this.qLink = qLink;
 		this.qType = qType;

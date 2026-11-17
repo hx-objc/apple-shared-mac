@@ -10,6 +10,7 @@ import hxmc.unsafe.Ptr;
 	public var CrlThisTime : Ptr;
 	public var PolicyIdentifier : Ptr;
 	public var CallerCredentials : Ptr;
+	@:hxmc.unsafe
 	public inline function new(CLHandle:I64, CrlIdentifier:Int, CrlThisTime:Ptr, PolicyIdentifier:Ptr, CallerCredentials:Ptr) {
 		this.CLHandle = CLHandle;
 		this.CrlIdentifier = CrlIdentifier;

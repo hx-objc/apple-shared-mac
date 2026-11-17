@@ -12,6 +12,7 @@ import hxmc.unsafe.Ptr;
 	public var tmCount : I64;
 	public var tmWakeUp : I64;
 	public var tmReserved : I64;
+	@:hxmc.unsafe
 	public inline function new(qLink:Ptr, qType:Int16, tmAddr:Ptr, tmCount:I64, tmWakeUp:I64, tmReserved:I64) {
 		this.qLink = qLink;
 		this.qType = qType;

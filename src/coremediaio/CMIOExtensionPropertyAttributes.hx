@@ -9,22 +9,35 @@ import hxmc.objc.Id;
 import hxmc.unsafe.Ptr;
 import objc.NSObject;
 
-@:hxmc.framework("CoreMediaIO") @:hxmc.objc extern class CMIOExtensionPropertyAttributes<ObjectType:(Id)=Id> extends NSObject implements NSCopying implements NSSecureCoding {
+@:hxmc.framework("CoreMediaIO") @:hxmc.objc @:hxmc.available(macos >= 12.3, maccatalyst >= 15.4) extern class CMIOExtensionPropertyAttributes<ObjectType:(Id)=Id> extends NSObject implements NSCopying implements NSSecureCoding {
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	static function alloc<ObjectType:(Id)>():CMIOExtensionPropertyAttributes<ObjectType>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	static var readOnlyPropertyAttribute(get, never) : CMIOExtensionPropertyAttributes;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	static function get_readOnlyPropertyAttribute():CMIOExtensionPropertyAttributes;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var minValue(get, never) : Null<ObjectType>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_minValue():Null<ObjectType>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var maxValue(get, never) : Null<ObjectType>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_maxValue():Null<ObjectType>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var validValues(get, never) : Null<NSArray<ObjectType>>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_validValues():Null<NSArray<ObjectType>>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var readOnly(get, never) : Bool;
 	@:selector("isReadOnly")
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_readOnly():Bool;
 	static var supportsSecureCoding(get, never) : Bool;
 	static function get_supportsSecureCoding():Bool;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	static function propertyAttributesWithMinValue<ObjectType:(Id)>(minValue:Null<ObjectType>, maxValue:Null<ObjectType>, validValues:Null<NSArray<ObjectType>>, readOnly:Bool):CMIOExtensionPropertyAttributes<ObjectType>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function initWithMinValue(minValue:Null<ObjectType>, maxValue:Null<ObjectType>, validValues:Null<NSArray<ObjectType>>, readOnly:Bool):CMIOExtensionPropertyAttributes<ObjectType>;
 	function copyWithZone(zone:Ptr):Id;
 	function encodeWithCoder(coder:NSCoder):Void;

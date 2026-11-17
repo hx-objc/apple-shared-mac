@@ -18,6 +18,7 @@ import hxmc.unsafe.Ptr;
 	public var volumeInfo : Ptr;
 	public var volumeName : Ptr;
 	public var ref : Ptr;
+	@:hxmc.unsafe
 	public inline function new(qLink:Ptr, qType:Int16, ioTrap:Int16, ioCmdAddr:Ptr, ioCompletion:Ptr, ioResult:Int16, ioNamePtr:Ptr, ioVRefNum:Int16, volumeIndex:Int, whichInfo:Int, volumeInfo:Ptr, volumeName:Ptr, ref:Ptr) {
 		this.qLink = qLink;
 		this.qType = qType;

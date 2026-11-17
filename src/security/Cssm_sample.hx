@@ -6,6 +6,7 @@ import hxmc.unsafe.Ptr;
 @:hxmc.struct class Cssm_sample {
 	public var TypedSample : Cssm_list;
 	public var Verifier : Ptr;
+	@:hxmc.unsafe
 	public inline function new(TypedSample:Cssm_list, Verifier:Ptr) {
 		this.TypedSample = TypedSample;
 		this.Verifier = Verifier;

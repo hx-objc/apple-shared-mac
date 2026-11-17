@@ -7,33 +7,61 @@ import foundation.NSString;
 import foundation.NSStringArg;
 import objc.NSObject;
 
-@:hxmc.framework("CoreMediaIO") @:hxmc.objc extern class CMIOExtensionStreamProperties extends NSObject {
+@:hxmc.framework("CoreMediaIO") @:hxmc.objc @:hxmc.available(macos >= 12.3, maccatalyst >= 15.4) extern class CMIOExtensionStreamProperties extends NSObject {
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	static function alloc():CMIOExtensionStreamProperties;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var activeFormatIndex(get, set) : Null<NSNumberArg>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_activeFormatIndex():Null<NSNumberArg>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function set_activeFormatIndex(v:Null<NSNumberArg>):Null<NSNumberArg>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var frameDuration(get, set) : Null<NSDictionary>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_frameDuration():Null<NSDictionary>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function set_frameDuration(v:Null<NSDictionary>):Null<NSDictionary>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var maxFrameDuration(get, set) : Null<NSDictionary>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_maxFrameDuration():Null<NSDictionary>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function set_maxFrameDuration(v:Null<NSDictionary>):Null<NSDictionary>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var sinkBufferQueueSize(get, set) : Null<NSNumberArg>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_sinkBufferQueueSize():Null<NSNumberArg>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function set_sinkBufferQueueSize(v:Null<NSNumberArg>):Null<NSNumberArg>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var sinkBuffersRequiredForStartup(get, set) : Null<NSNumberArg>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_sinkBuffersRequiredForStartup():Null<NSNumberArg>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function set_sinkBuffersRequiredForStartup(v:Null<NSNumberArg>):Null<NSNumberArg>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var sinkBufferUnderrunCount(get, set) : Null<NSNumberArg>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_sinkBufferUnderrunCount():Null<NSNumberArg>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function set_sinkBufferUnderrunCount(v:Null<NSNumberArg>):Null<NSNumberArg>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var sinkEndOfData(get, set) : Null<NSNumberArg>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_sinkEndOfData():Null<NSNumberArg>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function set_sinkEndOfData(v:Null<NSNumberArg>):Null<NSNumberArg>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var propertiesDictionary(get, set) : NSDictionary<NSString, CMIOExtensionPropertyState>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_propertiesDictionary():NSDictionary<NSString, CMIOExtensionPropertyState>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function set_propertiesDictionary(v:NSDictionary<NSString, CMIOExtensionPropertyState>):NSDictionary<NSString, CMIOExtensionPropertyState>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	static function streamPropertiesWithDictionary(propertiesDictionary:NSDictionary<NSString, CMIOExtensionPropertyState>):CMIOExtensionStreamProperties;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function initWithDictionary(propertiesDictionary:NSDictionary<NSString, CMIOExtensionPropertyState>):CMIOExtensionStreamProperties;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function setPropertyState(propertyState:Null<CMIOExtensionPropertyState>, forProperty:NSStringArg):Void;
 }

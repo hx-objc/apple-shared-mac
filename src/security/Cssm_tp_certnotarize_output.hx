@@ -7,6 +7,7 @@ import hxmc.unsafe.Ptr;
 	public var NotarizeStatus : Int;
 	public var NotarizedCertGroup : Ptr;
 	public var PerformedServiceRequests : Int;
+	@:hxmc.unsafe
 	public inline function new(NotarizeStatus:Int, NotarizedCertGroup:Ptr, PerformedServiceRequests:Int) {
 		this.NotarizeStatus = NotarizeStatus;
 		this.NotarizedCertGroup = NotarizedCertGroup;

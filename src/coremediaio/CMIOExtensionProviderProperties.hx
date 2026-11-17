@@ -6,18 +6,31 @@ import foundation.NSString;
 import foundation.NSStringArg;
 import objc.NSObject;
 
-@:hxmc.framework("CoreMediaIO") @:hxmc.objc extern class CMIOExtensionProviderProperties extends NSObject {
+@:hxmc.framework("CoreMediaIO") @:hxmc.objc @:hxmc.available(macos >= 12.3, maccatalyst >= 15.4) extern class CMIOExtensionProviderProperties extends NSObject {
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	static function alloc():CMIOExtensionProviderProperties;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var name(get, set) : Null<NSStringArg>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_name():Null<NSStringArg>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function set_name(v:Null<NSStringArg>):Null<NSStringArg>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var manufacturer(get, set) : Null<NSStringArg>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_manufacturer():Null<NSStringArg>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function set_manufacturer(v:Null<NSStringArg>):Null<NSStringArg>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var propertiesDictionary(get, set) : NSDictionary<NSString, CMIOExtensionPropertyState>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_propertiesDictionary():NSDictionary<NSString, CMIOExtensionPropertyState>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function set_propertiesDictionary(v:NSDictionary<NSString, CMIOExtensionPropertyState>):NSDictionary<NSString, CMIOExtensionPropertyState>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	static function providerPropertiesWithDictionary(propertiesDictionary:NSDictionary<NSString, CMIOExtensionPropertyState>):CMIOExtensionProviderProperties;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function initWithDictionary(propertiesDictionary:NSDictionary<NSString, CMIOExtensionPropertyState>):CMIOExtensionProviderProperties;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function setPropertyState(propertyState:Null<CMIOExtensionPropertyState>, forProperty:NSStringArg):Void;
 }

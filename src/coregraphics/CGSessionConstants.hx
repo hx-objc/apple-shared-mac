@@ -4,9 +4,14 @@ package coregraphics;
 import foundation.NSString;
 
 final class CGSessionConstants {
+	@:hxmc.unsafe(gc)
 	public static final kCGSessionUserIDKey : NSString = cast hxmc.objc.Strings.toNSString("kCGSSessionUserIDKey");
+	@:hxmc.unsafe(gc)
 	public static final kCGSessionUserNameKey : NSString = cast hxmc.objc.Strings.toNSString("kCGSSessionUserNameKey");
+	@:hxmc.unsafe(gc)
 	public static final kCGSessionConsoleSetKey : NSString = cast hxmc.objc.Strings.toNSString("kCGSSessionConsoleSetKey");
+	@:hxmc.unsafe(gc)
 	public static final kCGSessionOnConsoleKey : NSString = cast hxmc.objc.Strings.toNSString("kCGSSessionOnConsoleKey");
+	@:hxmc.unsafe(gc)
 	public static final kCGSessionLoginDoneKey : NSString = cast hxmc.objc.Strings.toNSString("kCGSessionLoginDoneKey");
 }

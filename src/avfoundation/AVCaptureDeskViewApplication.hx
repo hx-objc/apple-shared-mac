@@ -4,9 +4,13 @@ package avfoundation;
 import foundation.NSError;
 import objc.NSObject;
 
-@:hxmc.framework("AVFoundation") @:hxmc.objc extern class AVCaptureDeskViewApplication extends NSObject {
+@:hxmc.framework("AVFoundation") @:hxmc.objc @:hxmc.available(macos >= 13.0, maccatalyst >= 16.1) extern class AVCaptureDeskViewApplication extends NSObject {
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.1)
 	static function alloc():AVCaptureDeskViewApplication;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.1)
 	function presentWithCompletionHandler(completionHandler:Null<Null<NSError> -> Void>):Void;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.1)
 	function presentWithLaunchConfiguration(launchConfiguration:AVCaptureDeskViewApplicationLaunchConfiguration, completionHandler:Null<Null<NSError> -> Void>):Void;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.1)
 	override function init():AVCaptureDeskViewApplication;
 }

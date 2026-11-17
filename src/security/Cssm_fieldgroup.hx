@@ -6,6 +6,7 @@ import hxmc.unsafe.Ptr;
 @:hxmc.struct class Cssm_fieldgroup {
 	public var NumberOfFields : Int;
 	public var Fields : Ptr;
+	@:hxmc.unsafe
 	public inline function new(NumberOfFields:Int, Fields:Ptr) {
 		this.NumberOfFields = NumberOfFields;
 		this.Fields = Fields;

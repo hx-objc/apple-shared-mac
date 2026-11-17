@@ -10,6 +10,7 @@ import hxmc.unsafe.Ptr;
 	public var SelectionPredicate : Ptr;
 	public var QueryLimits : Cssm_query_limits;
 	public var QueryFlags : Int;
+	@:hxmc.unsafe
 	public inline function new(RecordType:Int, Conjunctive:Int, NumSelectionPredicates:Int, SelectionPredicate:Ptr, QueryLimits:Cssm_query_limits, QueryFlags:Int) {
 		this.RecordType = RecordType;
 		this.Conjunctive = Conjunctive;

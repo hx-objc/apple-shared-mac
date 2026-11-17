@@ -7,6 +7,7 @@ import hxmc.unsafe.Ptr;
 	public var ServiceType : Int;
 	public var NumberOfServiceFuncs : Int;
 	public var ServiceFuncs : Ptr;
+	@:hxmc.unsafe
 	public inline function new(ServiceType:Int, NumberOfServiceFuncs:Int, ServiceFuncs:Ptr) {
 		this.ServiceType = ServiceType;
 		this.NumberOfServiceFuncs = NumberOfServiceFuncs;

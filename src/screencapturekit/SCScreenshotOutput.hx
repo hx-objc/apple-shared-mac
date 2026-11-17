@@ -5,16 +5,27 @@ import coregraphics.CGImage;
 import foundation.NSURL;
 import objc.NSObject;
 
-@:hxmc.framework("ScreenCaptureKit") @:hxmc.objc extern class SCScreenshotOutput extends NSObject {
+@:hxmc.framework("ScreenCaptureKit") @:hxmc.objc @:hxmc.available(macos >= 26.0, maccatalyst >= 26.0) extern class SCScreenshotOutput extends NSObject {
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	static function alloc():SCScreenshotOutput;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	var sdrImage(get, set) : Null<CGImage>;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	function get_sdrImage():Null<CGImage>;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	function set_sdrImage(v:Null<CGImage>):Null<CGImage>;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	var hdrImage(get, set) : Null<CGImage>;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	function get_hdrImage():Null<CGImage>;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	function set_hdrImage(v:Null<CGImage>):Null<CGImage>;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	var fileURL(get, set) : Null<NSURL>;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	function get_fileURL():Null<NSURL>;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	function set_fileURL(v:Null<NSURL>):Null<NSURL>;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	override function init():SCScreenshotOutput;
 }

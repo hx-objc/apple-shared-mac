@@ -8,6 +8,7 @@ import hxmc.unsafe.UInt8;
 	public var Type : UInt8;
 	public var Length : UInt8;
 	public var Name : Ptr;
+	@:hxmc.unsafe
 	public inline function new(Type:UInt8, Length:UInt8, Name:Ptr) {
 		this.Type = Type;
 		this.Length = Length;

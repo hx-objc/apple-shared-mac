@@ -13,6 +13,7 @@ import hxmc.unsafe.Ptr;
 	public var GetRecoveredObject : Ptr;
 	public var RecoveryRequestAbort : Ptr;
 	public var PassThrough : Ptr;
+	@:hxmc.unsafe
 	public inline function new(RegistrationRequest:Ptr, RegistrationRetrieve:Ptr, GenerateRecoveryFields:Ptr, ProcessRecoveryFields:Ptr, RecoveryRequest:Ptr, RecoveryRetrieve:Ptr, GetRecoveredObject:Ptr, RecoveryRequestAbort:Ptr, PassThrough:Ptr) {
 		this.RegistrationRequest = RegistrationRequest;
 		this.RegistrationRetrieve = RegistrationRetrieve;

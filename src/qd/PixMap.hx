@@ -21,6 +21,7 @@ import hxmc.unsafe.Ptr;
 	public var pixelFormat : Int;
 	public var pmTable : Ptr;
 	public var pmExt : Ptr;
+	@:hxmc.unsafe
 	public inline function new(baseAddr:Ptr, rowBytes:Int16, bounds:Rect, pmVersion:Int16, packType:Int16, packSize:Int, hRes:Int, vRes:Int, pixelType:Int16, pixelSize:Int16, cmpCount:Int16, cmpSize:Int16, pixelFormat:Int, pmTable:Ptr, pmExt:Ptr) {
 		this.baseAddr = baseAddr;
 		this.rowBytes = rowBytes;

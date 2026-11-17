@@ -10,6 +10,7 @@ import hxmc.unsafe.Ptr;
 	public var calloc_func : Ptr;
 	public var CcToHandle_func : Ptr;
 	public var GetModuleInfo_func : Ptr;
+	@:hxmc.unsafe
 	public inline function new(malloc_func:Ptr, free_func:Ptr, realloc_func:Ptr, calloc_func:Ptr, CcToHandle_func:Ptr, GetModuleInfo_func:Ptr) {
 		this.malloc_func = malloc_func;
 		this.free_func = free_func;

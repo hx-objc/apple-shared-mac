@@ -4,10 +4,15 @@ package screencapturekit;
 import hxmc.I64;
 
 enum abstract SCContentSharingPickerMode(I64) to I64 {
+	@:hxmc.available(macos >= 14.0, maccatalyst >= 18.2)
 	var SingleWindow = 1;
+	@:hxmc.available(macos >= 14.0, maccatalyst >= 18.2)
 	var MultipleWindows = 2;
+	@:hxmc.available(macos >= 14.0, maccatalyst >= 18.2)
 	var SingleApplication = 4;
+	@:hxmc.available(macos >= 14.0, maccatalyst >= 18.2)
 	var MultipleApplications = 8;
+	@:hxmc.available(macos >= 14.0, maccatalyst >= 18.2)
 	var SingleDisplay = 16;
 	inline function new(v:I64) this = v;
 	var None = 0;

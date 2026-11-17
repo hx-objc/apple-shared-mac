@@ -6,29 +6,50 @@ import foundation.NSStringArg;
 import hxmc.unsafe.Ptr;
 import objc.NSObject;
 
-@:hxmc.framework("GameController") @:hxmc.objc extern class GCRacingWheel extends NSObject implements GCDevice {
+@:hxmc.framework("GameController") @:hxmc.objc @:hxmc.available(macos >= 13.0, maccatalyst >= 16.0) extern class GCRacingWheel extends NSObject implements GCDevice {
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	static function alloc():GCRacingWheel;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	static var connectedRacingWheels(get, never) : NSSet<GCRacingWheel>;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	static function get_connectedRacingWheels():NSSet<GCRacingWheel>;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	var acquired(get, never) : Bool;
 	@:selector("isAcquired")
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	function get_acquired():Bool;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	var wheelInput(get, never) : GCRacingWheelInput;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	function get_wheelInput():GCRacingWheelInput;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	var snapshot(get, never) : Bool;
 	@:selector("isSnapshot")
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	function get_snapshot():Bool;
+	@:hxmc.available(macos >= 11.0)
 	var handlerQueue(get, set) : NSObject;
+	@:hxmc.available(macos >= 11.0)
 	function get_handlerQueue():NSObject;
+	@:hxmc.available(macos >= 11.0)
 	function set_handlerQueue(v:NSObject):NSObject;
+	@:hxmc.available(macos >= 11.0)
 	var vendorName(get, never) : Null<NSStringArg>;
+	@:hxmc.available(macos >= 11.0)
 	function get_vendorName():Null<NSStringArg>;
+	@:hxmc.available(macos >= 11.0)
 	var productCategory(get, never) : NSStringArg;
+	@:hxmc.available(macos >= 11.0)
 	function get_productCategory():NSStringArg;
 	@:deprecated
+	@:hxmc.available(macos >= 11.0)
 	var physicalInputProfile(get, never) : GCPhysicalInputProfile;
+	@:hxmc.available(macos >= 11.0)
 	function get_physicalInputProfile():GCPhysicalInputProfile;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	function acquireDeviceWithError(error:Ptr):Bool;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	function relinquishDevice():Void;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	function capture():GCRacingWheel;
 }

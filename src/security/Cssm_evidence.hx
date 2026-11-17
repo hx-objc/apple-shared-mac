@@ -6,6 +6,7 @@ import hxmc.unsafe.Ptr;
 @:hxmc.struct class Cssm_evidence {
 	public var EvidenceForm : Int;
 	public var Evidence : Ptr;
+	@:hxmc.unsafe
 	public inline function new(EvidenceForm:Int, Evidence:Ptr) {
 		this.EvidenceForm = EvidenceForm;
 		this.Evidence = Evidence;

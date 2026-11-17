@@ -6,6 +6,7 @@ import hxmc.unsafe.Ptr;
 @:hxmc.struct class Cssm_tp_authority_id {
 	public var AuthorityCert : Ptr;
 	public var AuthorityLocation : Ptr;
+	@:hxmc.unsafe
 	public inline function new(AuthorityCert:Ptr, AuthorityLocation:Ptr) {
 		this.AuthorityCert = AuthorityCert;
 		this.AuthorityLocation = AuthorityLocation;

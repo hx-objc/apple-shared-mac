@@ -7,6 +7,7 @@ import hxmc.unsafe.Ptr;
 	public var IssueStatus : Int;
 	public var CertGroup : Ptr;
 	public var PerformedServiceRequests : Int;
+	@:hxmc.unsafe
 	public inline function new(IssueStatus:Int, CertGroup:Ptr, PerformedServiceRequests:Int) {
 		this.IssueStatus = IssueStatus;
 		this.CertGroup = CertGroup;

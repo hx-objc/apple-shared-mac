@@ -6,11 +6,17 @@ import foundation.NSString;
 import hxmc.unsafe.Ptr;
 import objc.NSObjectProtocol;
 
-@:hxmc.objc("CMIOExtensionProviderSource") extern interface CMIOExtensionProviderSource extends NSObjectProtocol {
+@:hxmc.objc("CMIOExtensionProviderSource") @:hxmc.available(macos >= 12.3, maccatalyst >= 15.4) extern interface CMIOExtensionProviderSource extends NSObjectProtocol {
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var availableProperties(get, never) : NSSet<NSString>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_availableProperties():NSSet<NSString>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function connectClient(client:CMIOExtensionClient, error:Ptr):Bool;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function disconnectClient(client:CMIOExtensionClient):Void;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function providerPropertiesForProperties(properties:NSSet<NSString>, error:Ptr):Null<CMIOExtensionProviderProperties>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function setProviderProperties(providerProperties:CMIOExtensionProviderProperties, error:Ptr):Bool;
 }

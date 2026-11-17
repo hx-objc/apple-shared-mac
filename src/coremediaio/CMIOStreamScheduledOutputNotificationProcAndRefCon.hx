@@ -6,6 +6,7 @@ import hxmc.unsafe.Ptr;
 @:hxmc.struct class CMIOStreamScheduledOutputNotificationProcAndRefCon {
 	public var scheduledOutputNotificationProc : Ptr;
 	public var scheduledOutputNotificationRefCon : Ptr;
+	@:hxmc.unsafe
 	public inline function new(scheduledOutputNotificationProc:Ptr, scheduledOutputNotificationRefCon:Ptr) {
 		this.scheduledOutputNotificationProc = scheduledOutputNotificationProc;
 		this.scheduledOutputNotificationRefCon = scheduledOutputNotificationRefCon;

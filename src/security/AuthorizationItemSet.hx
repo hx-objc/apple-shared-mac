@@ -6,6 +6,7 @@ import hxmc.unsafe.Ptr;
 @:hxmc.struct class AuthorizationItemSet {
 	public var count : Int;
 	public var items : Ptr;
+	@:hxmc.unsafe
 	public inline function new(count:Int, items:Ptr) {
 		this.count = count;
 		this.items = items;

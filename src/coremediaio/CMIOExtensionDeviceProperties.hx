@@ -7,24 +7,43 @@ import foundation.NSString;
 import foundation.NSStringArg;
 import objc.NSObject;
 
-@:hxmc.framework("CoreMediaIO") @:hxmc.objc extern class CMIOExtensionDeviceProperties extends NSObject {
+@:hxmc.framework("CoreMediaIO") @:hxmc.objc @:hxmc.available(macos >= 12.3, maccatalyst >= 15.4) extern class CMIOExtensionDeviceProperties extends NSObject {
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	static function alloc():CMIOExtensionDeviceProperties;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var model(get, set) : Null<NSStringArg>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_model():Null<NSStringArg>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function set_model(v:Null<NSStringArg>):Null<NSStringArg>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var suspended(get, set) : Null<NSNumberArg>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_suspended():Null<NSNumberArg>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function set_suspended(v:Null<NSNumberArg>):Null<NSNumberArg>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var transportType(get, set) : Null<NSNumberArg>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_transportType():Null<NSNumberArg>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function set_transportType(v:Null<NSNumberArg>):Null<NSNumberArg>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var linkedCoreAudioDeviceUID(get, set) : Null<NSStringArg>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_linkedCoreAudioDeviceUID():Null<NSStringArg>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function set_linkedCoreAudioDeviceUID(v:Null<NSStringArg>):Null<NSStringArg>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var propertiesDictionary(get, set) : NSDictionary<NSString, CMIOExtensionPropertyState>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_propertiesDictionary():NSDictionary<NSString, CMIOExtensionPropertyState>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function set_propertiesDictionary(v:NSDictionary<NSString, CMIOExtensionPropertyState>):NSDictionary<NSString, CMIOExtensionPropertyState>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	static function devicePropertiesWithDictionary(propertiesDictionary:NSDictionary<NSString, CMIOExtensionPropertyState>):CMIOExtensionDeviceProperties;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function initWithDictionary(propertiesDictionary:NSDictionary<NSString, CMIOExtensionPropertyState>):CMIOExtensionDeviceProperties;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function setPropertyState(propertyState:Null<CMIOExtensionPropertyState>, forProperty:NSStringArg):Void;
 }

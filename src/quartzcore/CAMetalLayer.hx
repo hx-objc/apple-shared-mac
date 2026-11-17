@@ -37,8 +37,11 @@ import metal.MTLResidencySet;
 	var colorspace(get, set) : Null<CGColorSpace>;
 	function get_colorspace():Null<CGColorSpace>;
 	function set_colorspace(v:Null<CGColorSpace>):Null<CGColorSpace>;
+	@:hxmc.available(ios >= 16.0, maccatalyst >= 16.0)
 	var EDRMetadata(get, set) : Null<CAEDRMetadata>;
+	@:hxmc.available(ios >= 16.0, maccatalyst >= 16.0)
 	function get_EDRMetadata():Null<CAEDRMetadata>;
+	@:hxmc.available(ios >= 16.0, maccatalyst >= 16.0)
 	function set_EDRMetadata(v:Null<CAEDRMetadata>):Null<CAEDRMetadata>;
 	var displaySyncEnabled(get, set) : Bool;
 	function get_displaySyncEnabled():Bool;
@@ -46,10 +49,15 @@ import metal.MTLResidencySet;
 	var allowsNextDrawableTimeout(get, set) : Bool;
 	function get_allowsNextDrawableTimeout():Bool;
 	function set_allowsNextDrawableTimeout(v:Bool):Bool;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	var developerHUDProperties(get, set) : Null<NSDictionary>;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	function get_developerHUDProperties():Null<NSDictionary>;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	function set_developerHUDProperties(v:Null<NSDictionary>):Null<NSDictionary>;
+	@:hxmc.available(macos >= 26.0, ios >= 26.0, maccatalyst >= 26.0)
 	var residencySet(get, never) : MTLResidencySet;
+	@:hxmc.available(macos >= 26.0, ios >= 26.0, maccatalyst >= 26.0)
 	function get_residencySet():MTLResidencySet;
 	function nextDrawable():Null<CAMetalDrawable>;
 	override function init():CAMetalLayer;

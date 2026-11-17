@@ -10,132 +10,258 @@ import hxmc.objc.Id;
 import hxmc.unsafe.Ptr;
 import objc.NSObject;
 
-@:hxmc.framework("AutomaticAssessmentConfiguration") @:hxmc.objc extern class AEAssessmentConfiguration extends NSObject implements NSCopying {
+@:hxmc.framework("AutomaticAssessmentConfiguration") @:hxmc.objc @:hxmc.available(macos >= version("10.15.4")) extern class AEAssessmentConfiguration extends NSObject implements NSCopying {
+	@:hxmc.available(macos >= version("10.15.4"))
 	static function alloc():AEAssessmentConfiguration;
+	@:hxmc.available(macos >= 15.0, maccatalyst >= 18.0)
 	var autocorrectMode(get, set) : AEAutocorrectMode;
+	@:hxmc.available(macos >= 15.0, maccatalyst >= 18.0)
 	function get_autocorrectMode():AEAutocorrectMode;
+	@:hxmc.available(macos >= 15.0, maccatalyst >= 18.0)
 	function set_autocorrectMode(v:AEAutocorrectMode):AEAutocorrectMode;
+	@:hxmc.available(macos >= 15.0, maccatalyst >= 18.0)
 	var allowsSpellCheck(get, set) : Bool;
+	@:hxmc.available(macos >= 15.0, maccatalyst >= 18.0)
 	function get_allowsSpellCheck():Bool;
+	@:hxmc.available(macos >= 15.0, maccatalyst >= 18.0)
 	function set_allowsSpellCheck(v:Bool):Bool;
+	@:hxmc.available(macos >= 15.0, maccatalyst >= 18.0)
 	var allowsPredictiveKeyboard(get, set) : Bool;
+	@:hxmc.available(macos >= 15.0, maccatalyst >= 18.0)
 	function get_allowsPredictiveKeyboard():Bool;
+	@:hxmc.available(macos >= 15.0, maccatalyst >= 18.0)
 	function set_allowsPredictiveKeyboard(v:Bool):Bool;
+	@:hxmc.available(macos >= 15.0, maccatalyst >= 18.0)
 	var allowsKeyboardShortcuts(get, set) : Bool;
+	@:hxmc.available(macos >= 15.0, maccatalyst >= 18.0)
 	function get_allowsKeyboardShortcuts():Bool;
+	@:hxmc.available(macos >= 15.0, maccatalyst >= 18.0)
 	function set_allowsKeyboardShortcuts(v:Bool):Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	var allowsDictation(get, set) : Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function get_allowsDictation():Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function set_allowsDictation(v:Bool):Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	var allowsAccessibilityAlternativeInputMethods(get, set) : Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function get_allowsAccessibilityAlternativeInputMethods():Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function set_allowsAccessibilityAlternativeInputMethods(v:Bool):Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	var allowsAccessibilityBackgroundSounds(get, set) : Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function get_allowsAccessibilityBackgroundSounds():Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function set_allowsAccessibilityBackgroundSounds(v:Bool):Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	var allowsAccessibilityFullKeyboardAccess(get, set) : Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function get_allowsAccessibilityFullKeyboardAccess():Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function set_allowsAccessibilityFullKeyboardAccess(v:Bool):Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	var allowsAccessibilityHoverText(get, set) : Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function get_allowsAccessibilityHoverText():Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function set_allowsAccessibilityHoverText(v:Bool):Bool;
+	@:hxmc.available(macos >= 26.1, maccatalyst >= 26.1)
 	var allowsAccessibilityKeyboard(get, set) : Bool;
+	@:hxmc.available(macos >= 26.1, maccatalyst >= 26.1)
 	function get_allowsAccessibilityKeyboard():Bool;
+	@:hxmc.available(macos >= 26.1, maccatalyst >= 26.1)
 	function set_allowsAccessibilityKeyboard(v:Bool):Bool;
+	@:hxmc.available(macos >= 26.1, ios >= 26.1, maccatalyst >= 26.1)
 	var allowsAccessibilityLiveCaptions(get, set) : Bool;
+	@:hxmc.available(macos >= 26.1, ios >= 26.1, maccatalyst >= 26.1)
 	function get_allowsAccessibilityLiveCaptions():Bool;
+	@:hxmc.available(macos >= 26.1, ios >= 26.1, maccatalyst >= 26.1)
 	function set_allowsAccessibilityLiveCaptions(v:Bool):Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	var allowsAccessibilityLiveSpeech(get, set) : Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function get_allowsAccessibilityLiveSpeech():Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function set_allowsAccessibilityLiveSpeech(v:Bool):Bool;
+	@:hxmc.available(macos >= 26.1, ios >= 26.1, maccatalyst >= 26.1)
 	var allowsAccessibilityReader(get, set) : Bool;
+	@:hxmc.available(macos >= 26.1, ios >= 26.1, maccatalyst >= 26.1)
 	function get_allowsAccessibilityReader():Bool;
+	@:hxmc.available(macos >= 26.1, ios >= 26.1, maccatalyst >= 26.1)
 	function set_allowsAccessibilityReader(v:Bool):Bool;
+	@:hxmc.available(macos >= 27.0, ios >= 27.0, maccatalyst >= 27.0)
 	var allowsAccessibilitySpokenContent(get, set) : Bool;
+	@:hxmc.available(macos >= 27.0, ios >= 27.0, maccatalyst >= 27.0)
 	function get_allowsAccessibilitySpokenContent():Bool;
+	@:hxmc.available(macos >= 27.0, ios >= 27.0, maccatalyst >= 27.0)
 	function set_allowsAccessibilitySpokenContent(v:Bool):Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	var allowsAccessibilitySwitchControl(get, set) : Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function get_allowsAccessibilitySwitchControl():Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function set_allowsAccessibilitySwitchControl(v:Bool):Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	var allowsAccessibilityVoiceControl(get, set) : Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function get_allowsAccessibilityVoiceControl():Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function set_allowsAccessibilityVoiceControl(v:Bool):Bool;
+	@:hxmc.available(macos >= 27.0, ios >= 27.0, maccatalyst >= 27.0)
 	var allowsAccessibilityVoiceOver(get, set) : Bool;
+	@:hxmc.available(macos >= 27.0, ios >= 27.0, maccatalyst >= 27.0)
 	function get_allowsAccessibilityVoiceOver():Bool;
+	@:hxmc.available(macos >= 27.0, ios >= 27.0, maccatalyst >= 27.0)
 	function set_allowsAccessibilityVoiceOver(v:Bool):Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	var allowsAccessibilityZoom(get, set) : Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function get_allowsAccessibilityZoom():Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function set_allowsAccessibilityZoom(v:Bool):Bool;
+	@:hxmc.available(macos >= 26.1, maccatalyst >= 26.1)
 	var allowsScreenshots(get, set) : Bool;
+	@:hxmc.available(macos >= 26.1, maccatalyst >= 26.1)
 	function get_allowsScreenshots():Bool;
+	@:hxmc.available(macos >= 26.1, maccatalyst >= 26.1)
 	function set_allowsScreenshots(v:Bool):Bool;
+	@:hxmc.available(macos >= 27.0, ios >= 26.4, maccatalyst >= 27.0)
 	var allowsEmojiKeyboard(get, set) : Bool;
+	@:hxmc.available(macos >= 27.0, ios >= 26.4, maccatalyst >= 27.0)
 	function get_allowsEmojiKeyboard():Bool;
+	@:hxmc.available(macos >= 27.0, ios >= 26.4, maccatalyst >= 27.0)
 	function set_allowsEmojiKeyboard(v:Bool):Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	var allowsUserScriptExecution(get, set) : Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function get_allowsUserScriptExecution():Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function set_allowsUserScriptExecution(v:Bool):Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	var allowsAutoFill(get, set) : Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function get_allowsAutoFill():Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function set_allowsAutoFill(v:Bool):Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	var allowsStructuralInput(get, set) : Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function get_allowsStructuralInput():Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function set_allowsStructuralInput(v:Bool):Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	var allowsForceQuitKeyboardShortcuts(get, set) : Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function get_allowsForceQuitKeyboardShortcuts():Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function set_allowsForceQuitKeyboardShortcuts(v:Bool):Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	var allowedDirectoriesAndFiles(get, set) : Null<NSSet<NSURL>>;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function get_allowedDirectoriesAndFiles():Null<NSSet<NSURL>>;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function set_allowedDirectoriesAndFiles(v:Null<NSSet<NSURL>>):Null<NSSet<NSURL>>;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	var allowsDock(get, set) : Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function get_allowsDock():Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function set_allowsDock(v:Bool):Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	var allowsMenuBar(get, set) : Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function get_allowsMenuBar():Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function set_allowsMenuBar(v:Bool):Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	var allowedAppleMenuItems(get, set) : Null<NSSet<NSString>>;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function get_allowedAppleMenuItems():Null<NSSet<NSString>>;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function set_allowedAppleMenuItems(v:Null<NSSet<NSString>>):Null<NSSet<NSString>>;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	var allowedMenuBarItems(get, set) : Null<NSSet<NSString>>;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function get_allowedMenuBarItems():Null<NSSet<NSString>>;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function set_allowedMenuBarItems(v:Null<NSSet<NSString>>):Null<NSSet<NSString>>;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	var allowsOnlyParticipantsToRun(get, set) : Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function get_allowsOnlyParticipantsToRun():Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function set_allowsOnlyParticipantsToRun(v:Bool):Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	var allowsLockdownMode(get, set) : Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function get_allowsLockdownMode():Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function set_allowsLockdownMode(v:Bool):Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	var allowsPrivateRelay(get, set) : Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function get_allowsPrivateRelay():Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function set_allowsPrivateRelay(v:Bool):Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	var allowsVirtualMachine(get, set) : Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function get_allowsVirtualMachine():Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function set_allowsVirtualMachine(v:Bool):Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	var requiresManagedDevice(get, set) : Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function get_requiresManagedDevice():Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function set_requiresManagedDevice(v:Bool):Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	var requiresReleaseOS(get, set) : Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function get_requiresReleaseOS():Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function set_requiresReleaseOS(v:Bool):Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	var requiresSIP(get, set) : Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function get_requiresSIP():Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function set_requiresSIP(v:Bool):Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	var requiresSingleUser(get, set) : Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function get_requiresSingleUser():Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function set_requiresSingleUser(v:Bool):Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	var requiresUserAccountType(get, set) : AEUserAccountType;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function get_requiresUserAccountType():AEUserAccountType;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function set_requiresUserAccountType(v:AEUserAccountType):AEUserAccountType;
+	@:hxmc.available(macos >= 12.0, ios >= 17.5)
 	var mainParticipantConfiguration(get, never) : AEAssessmentParticipantConfiguration;
+	@:hxmc.available(macos >= 12.0, ios >= 17.5)
 	function get_mainParticipantConfiguration():AEAssessmentParticipantConfiguration;
+	@:hxmc.available(macos >= 12.0, ios >= 17.5)
 	var configurationsByApplication(get, never) : NSDictionary<AEAssessmentApplication, AEAssessmentParticipantConfiguration>;
+	@:hxmc.available(macos >= 12.0, ios >= 17.5)
 	function get_configurationsByApplication():NSDictionary<AEAssessmentApplication, AEAssessmentParticipantConfiguration>;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	var configurationsByBinaryExecutable(get, never) : NSDictionary<AEAssessmentBinaryExecutable, AEAssessmentBinaryExecutableConfiguration>;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function get_configurationsByBinaryExecutable():NSDictionary<AEAssessmentBinaryExecutable, AEAssessmentBinaryExecutableConfiguration>;
+	@:hxmc.available(macos >= 12.0, ios >= 17.5)
 	overload function setConfiguration(configuration:AEAssessmentParticipantConfiguration, forApplication:AEAssessmentApplication):Void;
+	@:hxmc.available(macos >= 12.0, ios >= 17.5)
 	function removeApplication(application:AEAssessmentApplication):Void;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	overload function setConfiguration(configuration:AEAssessmentBinaryExecutableConfiguration, forBinaryExecutable:AEAssessmentBinaryExecutable):Void;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function removeBinaryExecutable(binaryExecutable:AEAssessmentBinaryExecutable):Void;
 	function copyWithZone(zone:Ptr):Id;
+	@:hxmc.available(macos >= version("10.15.4"))
 	override function init():AEAssessmentConfiguration;
 }

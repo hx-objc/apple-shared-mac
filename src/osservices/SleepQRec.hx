@@ -9,6 +9,7 @@ import hxmc.unsafe.Ptr;
 	public var sleepQType : Int16;
 	public var sleepQProc : Ptr;
 	public var sleepQFlags : Int16;
+	@:hxmc.unsafe
 	public inline function new(sleepQLink:Ptr, sleepQType:Int16, sleepQProc:Ptr, sleepQFlags:Int16) {
 		this.sleepQLink = sleepQLink;
 		this.sleepQType = sleepQType;

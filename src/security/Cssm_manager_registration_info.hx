@@ -10,6 +10,7 @@ import hxmc.unsafe.Ptr;
 	public var DeregisterDispatchTable : Ptr;
 	public var EventNotifyManager : Ptr;
 	public var RefreshFunctionTable : Ptr;
+	@:hxmc.unsafe
 	public inline function new(Initialize:Ptr, Terminate:Ptr, RegisterDispatchTable:Ptr, DeregisterDispatchTable:Ptr, EventNotifyManager:Ptr, RefreshFunctionTable:Ptr) {
 		this.Initialize = Initialize;
 		this.Terminate = Terminate;

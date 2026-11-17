@@ -27,6 +27,7 @@ import hxmc.unsafe.Ptr;
 	public var DataGetFromUniqueRecordId : Ptr;
 	public var FreeUniqueRecord : Ptr;
 	public var PassThrough : Ptr;
+	@:hxmc.unsafe
 	public inline function new(DbOpen:Ptr, DbClose:Ptr, DbCreate:Ptr, DbDelete:Ptr, CreateRelation:Ptr, DestroyRelation:Ptr, Authenticate:Ptr, GetDbAcl:Ptr, ChangeDbAcl:Ptr, GetDbOwner:Ptr, ChangeDbOwner:Ptr, GetDbNames:Ptr, GetDbNameFromHandle:Ptr, FreeNameList:Ptr, DataInsert:Ptr, DataDelete:Ptr, DataModify:Ptr, DataGetFirst:Ptr, DataGetNext:Ptr, DataAbortQuery:Ptr, DataGetFromUniqueRecordId:Ptr, FreeUniqueRecord:Ptr, PassThrough:Ptr) {
 		this.DbOpen = DbOpen;
 		this.DbClose = DbClose;

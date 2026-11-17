@@ -8,5 +8,6 @@ final class PMPrintSettingsKeysConstants {
 	public static inline var kPMCoverPageBefore : Int = 2;
 	public static inline var kPMCoverPageAfter : Int = 3;
 	public static inline var kPMCoverPageDefault : Int = 1;
+	@:hxmc.unsafe(gc)
 	public static final kPMCustomPaperListKey : NSString = cast hxmc.objc.Strings.toNSString("com.apple.print.CustomPaperListArray");
 }

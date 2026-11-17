@@ -11,6 +11,7 @@ import hxmc.unsafe.Ptr;
 	public var searchName : Ptr;
 	public var searchInfo1 : Ptr;
 	public var searchInfo2 : Ptr;
+	@:hxmc.unsafe
 	public inline function new(searchTime:Int, searchBits:Int, searchNameLength:I64, searchName:Ptr, searchInfo1:Ptr, searchInfo2:Ptr) {
 		this.searchTime = searchTime;
 		this.searchBits = searchBits;

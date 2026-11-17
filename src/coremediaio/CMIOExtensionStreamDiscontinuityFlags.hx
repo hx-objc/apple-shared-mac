@@ -2,9 +2,13 @@
 package coremediaio;
 
 enum abstract CMIOExtensionStreamDiscontinuityFlags(Int) to Int {
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var None = 0;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var Unknown = 1;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var Time = 2;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var SampleDropped = 64;
 	inline function new(v:Int) this = v;
 	@:op(A | B)

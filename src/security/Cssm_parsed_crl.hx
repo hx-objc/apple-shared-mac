@@ -7,6 +7,7 @@ import hxmc.unsafe.Ptr;
 	public var CrlType : Int;
 	public var ParsedCrlFormat : Int;
 	public var ParsedCrl : Ptr;
+	@:hxmc.unsafe
 	public inline function new(CrlType:Int, ParsedCrlFormat:Int, ParsedCrl:Ptr) {
 		this.CrlType = CrlType;
 		this.ParsedCrlFormat = ParsedCrlFormat;

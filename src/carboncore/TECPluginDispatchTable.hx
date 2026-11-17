@@ -25,6 +25,7 @@ import hxmc.unsafe.Ptr;
 	public var PluginGetCountMailTextEncodings : Ptr;
 	public var PluginGetTextEncodingInternetName : Ptr;
 	public var PluginGetTextEncodingFromInternetName : Ptr;
+	@:hxmc.unsafe
 	public inline function new(version:Int, compatibleVersion:Int, PluginID:Int, PluginNewEncodingConverter:Ptr, PluginClearContextInfo:Ptr, PluginConvertTextEncoding:Ptr, PluginFlushConversion:Ptr, PluginDisposeEncodingConverter:Ptr, PluginNewEncodingSniffer:Ptr, PluginClearSnifferContextInfo:Ptr, PluginSniffTextEncoding:Ptr, PluginDisposeEncodingSniffer:Ptr, PluginGetCountAvailableTextEncodings:Ptr, PluginGetCountAvailableTextEncodingPairs:Ptr, PluginGetCountDestinationTextEncodings:Ptr, PluginGetCountSubTextEncodings:Ptr, PluginGetCountAvailableSniffers:Ptr, PluginGetCountWebTextEncodings:Ptr, PluginGetCountMailTextEncodings:Ptr, PluginGetTextEncodingInternetName:Ptr, PluginGetTextEncodingFromInternetName:Ptr) {
 		this.version = version;
 		this.compatibleVersion = compatibleVersion;

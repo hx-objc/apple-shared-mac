@@ -6,6 +6,7 @@ import hxmc.unsafe.Ptr;
 @:hxmc.struct class Cssm_x509ext_policyQualifiers {
 	public var numberOfPolicyQualifiers : Int;
 	public var policyQualifier : Ptr;
+	@:hxmc.unsafe
 	public inline function new(numberOfPolicyQualifiers:Int, policyQualifier:Ptr) {
 		this.numberOfPolicyQualifiers = numberOfPolicyQualifiers;
 		this.policyQualifier = policyQualifier;

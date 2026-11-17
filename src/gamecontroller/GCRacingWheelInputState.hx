@@ -5,34 +5,63 @@ import foundation.NSString;
 import foundation.NSStringArg;
 import objc.NSObject;
 
-@:hxmc.framework("GameController") @:hxmc.objc extern class GCRacingWheelInputState extends NSObject implements GCDevicePhysicalInputState {
+@:hxmc.framework("GameController") @:hxmc.objc @:hxmc.available(macos >= 13.0, maccatalyst >= 16.0) extern class GCRacingWheelInputState extends NSObject implements GCDevicePhysicalInputState {
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	static function alloc():GCRacingWheelInputState;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	var wheel(get, never) : GCSteeringWheelElement;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	function get_wheel():GCSteeringWheelElement;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	var acceleratorPedal(get, never) : Null<GCButtonElement>;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	function get_acceleratorPedal():Null<GCButtonElement>;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	var brakePedal(get, never) : Null<GCButtonElement>;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	function get_brakePedal():Null<GCButtonElement>;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	var clutchPedal(get, never) : Null<GCButtonElement>;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	function get_clutchPedal():Null<GCButtonElement>;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	var shifter(get, never) : Null<GCGearShifterElement>;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	function get_shifter():Null<GCGearShifterElement>;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	var device(get, never) : Null<GCDevice>;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	function get_device():Null<GCDevice>;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	var lastEventTimestamp(get, never) : Float;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	function get_lastEventTimestamp():Float;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	var lastEventLatency(get, never) : Float;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	function get_lastEventLatency():Float;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	var elements(get, never) : GCPhysicalInputElementCollection<NSString, GCPhysicalInputElement>;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	function get_elements():GCPhysicalInputElementCollection<NSString, GCPhysicalInputElement>;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	var buttons(get, never) : GCPhysicalInputElementCollection<NSString, GCButtonElement>;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	function get_buttons():GCPhysicalInputElementCollection<NSString, GCButtonElement>;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	var axes(get, never) : GCPhysicalInputElementCollection<NSString, GCAxisElement>;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	function get_axes():GCPhysicalInputElementCollection<NSString, GCAxisElement>;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	var switches(get, never) : GCPhysicalInputElementCollection<NSString, GCSwitchElement>;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	function get_switches():GCPhysicalInputElementCollection<NSString, GCSwitchElement>;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	var dpads(get, never) : GCPhysicalInputElementCollection<NSString, GCDirectionPadElement>;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	function get_dpads():GCPhysicalInputElementCollection<NSString, GCDirectionPadElement>;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	function objectForKeyedSubscript(key:NSStringArg):Null<GCPhysicalInputElement>;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	override function init():GCRacingWheelInputState;
 }

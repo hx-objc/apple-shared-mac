@@ -5,6 +5,7 @@ import hxmc.unsafe.Ptr;
 
 @:hxmc.struct class RegisterInformation {
 	public var __unusedRegisterInformationField : Ptr;
+	@:hxmc.unsafe
 	public inline function new(__unusedRegisterInformationField:Ptr) {
 		this.__unusedRegisterInformationField = __unusedRegisterInformationField;
 	}

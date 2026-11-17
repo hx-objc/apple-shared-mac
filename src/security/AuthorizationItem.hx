@@ -10,6 +10,7 @@ import hxmc.unsafe.Ptr;
 	public var valueLength : I64;
 	public var value : Ptr;
 	public var flags : Int;
+	@:hxmc.unsafe
 	public inline function new(name:CString, valueLength:I64, value:Ptr, flags:Int) {
 		this.name = name;
 		this.valueLength = valueLength;

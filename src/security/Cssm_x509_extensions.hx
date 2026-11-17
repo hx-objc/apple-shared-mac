@@ -6,6 +6,7 @@ import hxmc.unsafe.Ptr;
 @:hxmc.struct class Cssm_x509_extensions {
 	public var numberOfExtensions : Int;
 	public var extensions : Ptr;
+	@:hxmc.unsafe
 	public inline function new(numberOfExtensions:Int, extensions:Ptr) {
 		this.numberOfExtensions = numberOfExtensions;
 		this.extensions = extensions;

@@ -4,13 +4,21 @@ package avfoundation;
 import coregraphics.CGRect;
 import objc.NSObject;
 
-@:hxmc.framework("AVFoundation") @:hxmc.objc extern class AVCaptureDeskViewApplicationLaunchConfiguration extends NSObject {
+@:hxmc.framework("AVFoundation") @:hxmc.objc @:hxmc.available(macos >= 13.0, maccatalyst >= 16.1) extern class AVCaptureDeskViewApplicationLaunchConfiguration extends NSObject {
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.1)
 	static function alloc():AVCaptureDeskViewApplicationLaunchConfiguration;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.1)
 	var mainWindowFrame(get, set) : CGRect;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.1)
 	function get_mainWindowFrame():CGRect;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.1)
 	function set_mainWindowFrame(v:CGRect):CGRect;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.1)
 	var requiresSetUpModeCompletion(get, set) : Bool;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.1)
 	function get_requiresSetUpModeCompletion():Bool;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.1)
 	function set_requiresSetUpModeCompletion(v:Bool):Bool;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.1)
 	override function init():AVCaptureDeskViewApplicationLaunchConfiguration;
 }

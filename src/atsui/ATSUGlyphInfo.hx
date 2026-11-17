@@ -17,6 +17,7 @@ import hxmc.unsafe.UInt16;
 	public var idealX : Float32;
 	public var screenX : Int16;
 	public var caretX : Int16;
+	@:hxmc.unsafe
 	public inline function new(glyphID:UInt16, reserved:UInt16, layoutFlags:Int, charIndex:I64, style:Ptr, deltaY:Float32, idealX:Float32, screenX:Int16, caretX:Int16) {
 		this.glyphID = glyphID;
 		this.reserved = reserved;

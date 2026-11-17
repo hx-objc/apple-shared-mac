@@ -7,19 +7,33 @@ import foundation.NSURL;
 import hxmc.unsafe.Ptr;
 import objc.NSObject;
 
-@:hxmc.framework("ServiceManagement") @:hxmc.objc extern class SMAppService extends NSObject {
+@:hxmc.framework("ServiceManagement") @:hxmc.objc @:hxmc.available(macos >= 13.0, maccatalyst >= 16.0) extern class SMAppService extends NSObject {
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	static function alloc():SMAppService;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	static var mainAppService(get, never) : SMAppService;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	static function get_mainAppService():SMAppService;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	var status(get, never) : SMAppServiceStatus;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	function get_status():SMAppServiceStatus;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	static function loginItemServiceWithIdentifier(identifier:NSStringArg):SMAppService;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	static function agentServiceWithPlistName(plistName:NSStringArg):SMAppService;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	static function daemonServiceWithPlistName(plistName:NSStringArg):SMAppService;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	function registerAndReturnError(error:Ptr):Bool;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	function unregisterAndReturnError(error:Ptr):Bool;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	function unregisterWithCompletionHandler(handler:Null<NSError> -> Void):Void;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	static function statusForLegacyURL(url:NSURL):SMAppServiceStatus;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	static function openSystemSettingsLoginItems():Void;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	override function init():SMAppService;
 }

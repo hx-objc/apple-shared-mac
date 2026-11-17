@@ -8,6 +8,7 @@ import hxmc.unsafe.Ptr;
 	public var EditMode : Int;
 	public var OldEntryHandle : I64;
 	public var NewEntry : Ptr;
+	@:hxmc.unsafe
 	public inline function new(EditMode:Int, OldEntryHandle:I64, NewEntry:Ptr) {
 		this.EditMode = EditMode;
 		this.OldEntryHandle = OldEntryHandle;

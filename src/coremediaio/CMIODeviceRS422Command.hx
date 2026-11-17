@@ -9,6 +9,7 @@ import hxmc.unsafe.Ptr;
 	public var mResponse : Ptr;
 	public var mResponseLength : Int;
 	public var mResponseUsed : Int;
+	@:hxmc.unsafe
 	public inline function new(mCommand:Ptr, mCommandLength:Int, mResponse:Ptr, mResponseLength:Int, mResponseUsed:Int) {
 		this.mCommand = mCommand;
 		this.mCommandLength = mCommandLength;

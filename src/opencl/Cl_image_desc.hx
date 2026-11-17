@@ -15,6 +15,7 @@ import hxmc.unsafe.Ptr;
 	public var num_mip_levels : Int;
 	public var num_samples : Int;
 	public var buffer : Ptr;
+	@:hxmc.unsafe
 	public inline function new(image_type:Int, image_width:I64, image_height:I64, image_depth:I64, image_array_size:I64, image_row_pitch:I64, image_slice_pitch:I64, num_mip_levels:Int, num_samples:Int, buffer:Ptr) {
 		this.image_type = image_type;
 		this.image_width = image_width;

@@ -4,7 +4,9 @@ package appkit;
 import hxmc.I64;
 
 enum abstract NSToolbarItemStyle(I64) to I64 {
+	@:hxmc.available(macos >= 26.0, ios >= 26.0, maccatalyst >= 26.0)
 	var Plain = 0;
+	@:hxmc.available(macos >= 26.0, ios >= 26.0, maccatalyst >= 26.0)
 	var Prominent = 1;
 	inline function new(v:I64) this = v;
 }

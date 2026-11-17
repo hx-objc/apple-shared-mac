@@ -4,11 +4,17 @@ package security;
 import foundation.NSString;
 
 final class SecTrustSettingsConstants {
+	@:hxmc.unsafe(gc)
 	public static final kSecTrustSettingsPolicy : NSString = cast hxmc.objc.Strings.toNSString("kSecTrustSettingsPolicy");
+	@:hxmc.unsafe(gc)
 	public static final kSecTrustSettingsApplication : NSString = cast hxmc.objc.Strings.toNSString("kSecTrustSettingsApplication");
+	@:hxmc.unsafe(gc)
 	public static final kSecTrustSettingsPolicyString : NSString = cast hxmc.objc.Strings.toNSString("kSecTrustSettingsPolicyString");
+	@:hxmc.unsafe(gc)
 	public static final kSecTrustSettingsKeyUsage : NSString = cast hxmc.objc.Strings.toNSString("kSecTrustSettingsKeyUsage");
+	@:hxmc.unsafe(gc)
 	public static final kSecTrustSettingsAllowedError : NSString = cast hxmc.objc.Strings.toNSString("kSecTrustSettingsAllowedError");
+	@:hxmc.unsafe(gc)
 	public static final kSecTrustSettingsResult : NSString = cast hxmc.objc.Strings.toNSString("kSecTrustSettingsResult");
 	public static inline var kSecTrustSettingsDefaultRootCertSetting : Int = -1;
 }

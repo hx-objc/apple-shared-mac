@@ -24,14 +24,24 @@ final class LatentSemanticMappingConstants {
 	public static inline var kLSMTextPreserveCase : Int = 1;
 	public static inline var kLSMTextPreserveAcronyms : Int = 2;
 	public static inline var kLSMTextApplySpamHeuristics : Int = 4;
+	@:hxmc.unsafe(gc)
 	public static final kLSMAlgorithmKey : NSString = cast hxmc.objc.Strings.toNSString("LSMAlgorithm");
+	@:hxmc.unsafe(gc)
 	public static final kLSMAlgorithmDense : NSString = cast hxmc.objc.Strings.toNSString("LSMAlgorithmDense");
+	@:hxmc.unsafe(gc)
 	public static final kLSMAlgorithmSparse : NSString = cast hxmc.objc.Strings.toNSString("LSMAlgorithmSparse");
+	@:hxmc.unsafe(gc)
 	public static final kLSMPrecisionKey : NSString = cast hxmc.objc.Strings.toNSString("LSMPrecision");
+	@:hxmc.unsafe(gc)
 	public static final kLSMPrecisionFloat : NSString = cast hxmc.objc.Strings.toNSString("LSMPrecisionFloat");
+	@:hxmc.unsafe(gc)
 	public static final kLSMPrecisionDouble : NSString = cast hxmc.objc.Strings.toNSString("LSMPrecisionDouble");
+	@:hxmc.unsafe(gc)
 	public static final kLSMDimensionKey : NSString = cast hxmc.objc.Strings.toNSString("LSMDimension");
+	@:hxmc.unsafe(gc)
 	public static final kLSMIterationsKey : NSString = cast hxmc.objc.Strings.toNSString("LSMIterations");
+	@:hxmc.unsafe(gc)
 	public static final kLSMSweepAgeKey : NSString = cast hxmc.objc.Strings.toNSString("LSMSweepAge");
+	@:hxmc.unsafe(gc)
 	public static final kLSMSweepCutoffKey : NSString = cast hxmc.objc.Strings.toNSString("LSMSweepCutoff");
 }

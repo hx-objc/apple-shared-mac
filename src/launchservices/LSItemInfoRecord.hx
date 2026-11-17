@@ -8,6 +8,7 @@ import hxmc.unsafe.Ptr;
 	public var filetype : Int;
 	public var creator : Int;
 	public var extension : Ptr;
+	@:hxmc.unsafe
 	public inline function new(flags:LSItemInfoFlags, filetype:Int, creator:Int, extension:Ptr) {
 		this.flags = flags;
 		this.filetype = filetype;

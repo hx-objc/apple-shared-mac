@@ -14,6 +14,7 @@ import hxmc.unsafe.Ptr;
 	public var NumberOfServiceControls : Int;
 	public var ServiceControls : Ptr;
 	public var UserCredentials : Ptr;
+	@:hxmc.unsafe
 	public inline function new(CLHandle:I64, NumberOfFields:Int, MoreFields:Ptr, SignScope:Ptr, ScopeSize:Int, MoreServiceRequests:Int, NumberOfServiceControls:Int, ServiceControls:Ptr, UserCredentials:Ptr) {
 		this.CLHandle = CLHandle;
 		this.NumberOfFields = NumberOfFields;

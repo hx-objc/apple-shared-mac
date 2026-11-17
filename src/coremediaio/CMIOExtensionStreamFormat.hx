@@ -12,19 +12,30 @@ import hxmc.objc.Id;
 import hxmc.unsafe.Ptr;
 import objc.NSObject;
 
-@:hxmc.framework("CoreMediaIO") @:hxmc.objc extern class CMIOExtensionStreamFormat extends NSObject implements NSCopying implements NSSecureCoding {
+@:hxmc.framework("CoreMediaIO") @:hxmc.objc @:hxmc.available(macos >= 12.3, maccatalyst >= 15.4) extern class CMIOExtensionStreamFormat extends NSObject implements NSCopying implements NSSecureCoding {
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	static function alloc():CMIOExtensionStreamFormat;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var formatDescription(get, never) : CMAudioFormatDescription;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_formatDescription():CMAudioFormatDescription;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var minFrameDuration(get, never) : CMTime;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_minFrameDuration():CMTime;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var maxFrameDuration(get, never) : CMTime;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_maxFrameDuration():CMTime;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var validFrameDurations(get, never) : Null<NSArray<NSDictionary>>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_validFrameDurations():Null<NSArray<NSDictionary>>;
 	static var supportsSecureCoding(get, never) : Bool;
 	static function get_supportsSecureCoding():Bool;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	static function streamFormatWithFormatDescription(formatDescription:CMAudioFormatDescription, maxFrameDuration:CMTime, minFrameDuration:CMTime, validFrameDurations:Null<NSArray<NSDictionary>>):CMIOExtensionStreamFormat;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function initWithFormatDescription(formatDescription:CMAudioFormatDescription, maxFrameDuration:CMTime, minFrameDuration:CMTime, validFrameDurations:Null<NSArray<NSDictionary>>):CMIOExtensionStreamFormat;
 	function copyWithZone(zone:Ptr):Id;
 	function encodeWithCoder(coder:NSCoder):Void;

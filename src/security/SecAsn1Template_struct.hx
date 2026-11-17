@@ -8,6 +8,7 @@ import hxmc.unsafe.Ptr;
 	public var offset : Int;
 	public var sub : Ptr;
 	public var size : Int;
+	@:hxmc.unsafe
 	public inline function new(kind:Int, offset:Int, sub:Ptr, size:Int) {
 		this.kind = kind;
 		this.offset = offset;

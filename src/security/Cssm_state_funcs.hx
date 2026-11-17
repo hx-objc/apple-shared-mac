@@ -10,6 +10,7 @@ import hxmc.unsafe.Ptr;
 	public var cssm_IsFuncCallValid : Ptr;
 	public var cssm_DeregisterManagerServices : Ptr;
 	public var cssm_DeliverModuleManagerEvent : Ptr;
+	@:hxmc.unsafe
 	public inline function new(cssm_GetAttachFunctions:Ptr, cssm_ReleaseAttachFunctions:Ptr, cssm_GetAppMemoryFunctions:Ptr, cssm_IsFuncCallValid:Ptr, cssm_DeregisterManagerServices:Ptr, cssm_DeliverModuleManagerEvent:Ptr) {
 		this.cssm_GetAttachFunctions = cssm_GetAttachFunctions;
 		this.cssm_ReleaseAttachFunctions = cssm_ReleaseAttachFunctions;

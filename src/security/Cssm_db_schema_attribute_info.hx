@@ -8,6 +8,7 @@ import hxmc.unsafe.Ptr;
 	public var AttributeName : Ptr;
 	public var AttributeNameID : Cssm_data;
 	public var DataType : Int;
+	@:hxmc.unsafe
 	public inline function new(AttributeId:Int, AttributeName:Ptr, AttributeNameID:Cssm_data, DataType:Int) {
 		this.AttributeId = AttributeId;
 		this.AttributeName = AttributeName;

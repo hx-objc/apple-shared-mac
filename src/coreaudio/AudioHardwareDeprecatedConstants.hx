@@ -26,6 +26,7 @@ final class AudioHardwareDeprecatedConstants {
 	public static inline var kAudioDeviceUnknown : Int = 0;
 	public static inline var kAudioDeviceTransportTypeAutoAggregate : Int = 1718055536;
 	@:deprecated
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	public static inline var kAudioDeviceTransportTypeContinuityCapture : Int = 1667457392;
 	public static inline var kAudioDevicePropertyVolumeDecibelsToScalarTransferFunction : Int = 1986229350;
 	public static inline var kAudioDevicePropertyPlayThruVolumeDecibelsToScalarTransferFunction : Int = 1836479590;

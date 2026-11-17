@@ -28,9 +28,13 @@ import objc.NSObject;
 	var delegate(get, set) : Null<ASWebAuthenticationSessionRequestDelegate>;
 	function get_delegate():Null<ASWebAuthenticationSessionRequestDelegate>;
 	function set_delegate(v:Null<ASWebAuthenticationSessionRequestDelegate>):Null<ASWebAuthenticationSessionRequestDelegate>;
+	@:hxmc.available(macos >= 14.4, maccatalyst >= 17.4)
 	var additionalHeaderFields(get, never) : Null<NSDictionary<NSString, NSString>>;
+	@:hxmc.available(macos >= 14.4, maccatalyst >= 17.4)
 	function get_additionalHeaderFields():Null<NSDictionary<NSString, NSString>>;
+	@:hxmc.available(macos >= 14.4, maccatalyst >= 17.4)
 	var callback(get, never) : Null<ASWebAuthenticationSessionCallback>;
+	@:hxmc.available(macos >= 14.4, maccatalyst >= 17.4)
 	function get_callback():Null<ASWebAuthenticationSessionCallback>;
 	static var supportsSecureCoding(get, never) : Bool;
 	static function get_supportsSecureCoding():Bool;

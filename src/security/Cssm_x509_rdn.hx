@@ -6,6 +6,7 @@ import hxmc.unsafe.Ptr;
 @:hxmc.struct class Cssm_x509_rdn {
 	public var numberOfPairs : Int;
 	public var AttributeTypeAndValue : Ptr;
+	@:hxmc.unsafe
 	public inline function new(numberOfPairs:Int, AttributeTypeAndValue:Ptr) {
 		this.numberOfPairs = numberOfPairs;
 		this.AttributeTypeAndValue = AttributeTypeAndValue;

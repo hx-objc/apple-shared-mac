@@ -11,6 +11,7 @@ import hxmc.unsafe.Ptr;
 	public var releaseInfo : Ptr;
 	public var copyInfoDescription : Ptr;
 	public var receiveEvent : Ptr;
+	@:hxmc.unsafe
 	public inline function new(version:I64, info:Ptr, retainInfo:Ptr, releaseInfo:Ptr, copyInfoDescription:Ptr, receiveEvent:Ptr) {
 		this.version = version;
 		this.info = info;

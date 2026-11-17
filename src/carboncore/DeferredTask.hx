@@ -12,6 +12,7 @@ import hxmc.unsafe.Ptr;
 	public var dtAddr : Ptr;
 	public var dtParam : I64;
 	public var dtReserved : I64;
+	@:hxmc.unsafe
 	public inline function new(qLink:Ptr, qType:Int16, dtFlags:Int16, dtAddr:Ptr, dtParam:I64, dtReserved:I64) {
 		this.qLink = qLink;
 		this.qType = qType;

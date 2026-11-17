@@ -43,6 +43,7 @@ import hxmc.unsafe.Ptr;
 	public var CrlAbortCache : Ptr;
 	public var CrlDescribeFormat : Ptr;
 	public var PassThrough : Ptr;
+	@:hxmc.unsafe
 	public inline function new(CertCreateTemplate:Ptr, CertGetAllTemplateFields:Ptr, CertSign:Ptr, CertVerify:Ptr, CertVerifyWithKey:Ptr, CertGetFirstFieldValue:Ptr, CertGetNextFieldValue:Ptr, CertAbortQuery:Ptr, CertGetKeyInfo:Ptr, CertGetAllFields:Ptr, FreeFields:Ptr, FreeFieldValue:Ptr, CertCache:Ptr, CertGetFirstCachedFieldValue:Ptr, CertGetNextCachedFieldValue:Ptr, CertAbortCache:Ptr, CertGroupToSignedBundle:Ptr, CertGroupFromVerifiedBundle:Ptr, CertDescribeFormat:Ptr, CrlCreateTemplate:Ptr, CrlSetFields:Ptr, CrlAddCert:Ptr, CrlRemoveCert:Ptr, CrlSign:Ptr, CrlVerify:Ptr, CrlVerifyWithKey:Ptr, IsCertInCrl:Ptr, CrlGetFirstFieldValue:Ptr, CrlGetNextFieldValue:Ptr, CrlAbortQuery:Ptr, CrlGetAllFields:Ptr, CrlCache:Ptr, IsCertInCachedCrl:Ptr, CrlGetFirstCachedFieldValue:Ptr, CrlGetNextCachedFieldValue:Ptr, CrlGetAllCachedRecordFields:Ptr, CrlAbortCache:Ptr, CrlDescribeFormat:Ptr, PassThrough:Ptr) {
 		this.CertCreateTemplate = CertCreateTemplate;
 		this.CertGetAllTemplateFields = CertGetAllTemplateFields;

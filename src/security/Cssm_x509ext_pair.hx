@@ -6,6 +6,7 @@ import hxmc.unsafe.Ptr;
 @:hxmc.struct class Cssm_x509ext_pair {
 	public var tagAndValue : Cssm_x509_extensionTagAndValue;
 	public var parsedValue : Ptr;
+	@:hxmc.unsafe
 	public inline function new(tagAndValue:Cssm_x509_extensionTagAndValue, parsedValue:Ptr) {
 		this.tagAndValue = tagAndValue;
 		this.parsedValue = parsedValue;

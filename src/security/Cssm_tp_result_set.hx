@@ -6,6 +6,7 @@ import hxmc.unsafe.Ptr;
 @:hxmc.struct class Cssm_tp_result_set {
 	public var NumberOfResults : Int;
 	public var Results : Ptr;
+	@:hxmc.unsafe
 	public inline function new(NumberOfResults:Int, Results:Ptr) {
 		this.NumberOfResults = NumberOfResults;
 		this.Results = Results;

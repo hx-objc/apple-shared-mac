@@ -12,7 +12,9 @@ enum abstract SecCSFlags(Int) to Int {
 	var kSecCSApplyEmbeddedPolicy = 33554432;
 	var kSecCSStripDisallowedXattrs = 16777216;
 	var kSecCSMatchGuestRequirementInKernel = 8388608;
+	@:hxmc.available(macos >= 27.0, ios >= 27.0, maccatalyst >= 27.0)
 	var kSecCSUseClassicalSignature = 4194304;
+	@:hxmc.available(macos >= 27.0, ios >= 27.0, maccatalyst >= 27.0)
 	var kSecCSUsePostQuantumSignature = 2097152;
 	inline function new(v:Int) this = v;
 	var None = 0;

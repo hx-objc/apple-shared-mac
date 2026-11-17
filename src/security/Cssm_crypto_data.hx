@@ -7,6 +7,7 @@ import hxmc.unsafe.Ptr;
 	public var Param : Cssm_data;
 	public var Callback : Ptr;
 	public var CallerCtx : Ptr;
+	@:hxmc.unsafe
 	public inline function new(Param:Cssm_data, Callback:Ptr, CallerCtx:Ptr) {
 		this.Param = Param;
 		this.Callback = Callback;

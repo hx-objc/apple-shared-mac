@@ -16,6 +16,8 @@ final class SecStaticCodeConstants {
 	public static inline var kSecCSUseSoftwareSigningCert : Int = 1024;
 	public static inline var kSecCSValidatePEH : Int = 2048;
 	public static inline var kSecCSSingleThreaded : Int = 4096;
+	@:hxmc.available(macos >= 11.3)
 	public static inline var kSecCSAllowNetworkAccess : Int = 65536;
+	@:hxmc.available(macos >= 11.3)
 	public static inline var kSecCSFastExecutableValidation : Int = 131072;
 }

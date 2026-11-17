@@ -6,6 +6,7 @@ import hxmc.unsafe.Ptr;
 @:hxmc.struct class Cssm_tp_request_set {
 	public var NumberOfRequests : Int;
 	public var Requests : Ptr;
+	@:hxmc.unsafe
 	public inline function new(NumberOfRequests:Int, Requests:Ptr) {
 		this.NumberOfRequests = NumberOfRequests;
 		this.Requests = Requests;

@@ -8,6 +8,7 @@ import hxmc.unsafe.Ptr;
 	public var refCon : Ptr;
 	public var retain : Ptr;
 	public var release : Ptr;
+	@:hxmc.unsafe
 	public inline function new(version:Int, refCon:Ptr, retain:Ptr, release:Ptr) {
 		this.version = version;
 		this.refCon = refCon;

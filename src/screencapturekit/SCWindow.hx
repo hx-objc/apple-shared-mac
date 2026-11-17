@@ -6,22 +6,37 @@ import foundation.NSStringArg;
 import hxmc.I64;
 import objc.NSObject;
 
-@:hxmc.framework("ScreenCaptureKit") @:hxmc.objc extern class SCWindow extends NSObject {
+@:hxmc.framework("ScreenCaptureKit") @:hxmc.objc @:hxmc.available(macos >= 12.3, maccatalyst >= 18.2) extern class SCWindow extends NSObject {
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	static function alloc():SCWindow;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	var windowID(get, never) : Int;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	function get_windowID():Int;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	var frame(get, never) : CGRect;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	function get_frame():CGRect;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	var title(get, never) : Null<NSStringArg>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	function get_title():Null<NSStringArg>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	var windowLayer(get, never) : I64;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	function get_windowLayer():I64;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	var owningApplication(get, never) : Null<SCRunningApplication>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	function get_owningApplication():Null<SCRunningApplication>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	var onScreen(get, never) : Bool;
 	@:selector("isOnScreen")
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	function get_onScreen():Bool;
+	@:hxmc.available(macos >= 13.1, maccatalyst >= 18.2)
 	var active(get, never) : Bool;
 	@:selector("isActive")
+	@:hxmc.available(macos >= 13.1, maccatalyst >= 18.2)
 	function get_active():Bool;
 }

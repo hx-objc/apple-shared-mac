@@ -19,9 +19,11 @@ import objc.NSObjectProtocol;
 	function toolbarAllowedItemIdentifiers(toolbar:NSToolbar):NSArray<NSString>;
 	@:optional
 	function toolbarSelectableItemIdentifiers(toolbar:NSToolbar):NSArray<NSString>;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	@:optional
 	function toolbarImmovableItemIdentifiers(toolbar:NSToolbar):NSSet<NSString>;
 	@:selector("toolbar:itemIdentifier:canBeInsertedAtIndex:")
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	@:optional
 	function toolbarItemIdentifierCanBeInsertedAtIndex(toolbar:NSToolbar, itemIdentifier:NSStringArg, canBeInsertedAtIndex:I64):Bool;
 	@:optional

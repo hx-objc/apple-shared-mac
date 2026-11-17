@@ -8,6 +8,7 @@ enum abstract MTLStorageMode(I64) to I64 {
 	@:deprecated
 	var Managed = 1;
 	var Private = 2;
+	@:hxmc.available(macos >= 11.0)
 	var Memoryless = 3;
 	inline function new(v:I64) this = v;
 }

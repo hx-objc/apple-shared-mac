@@ -4,26 +4,48 @@ package automaticassessmentconfiguration;
 import foundation.NSString;
 
 @:hxmc.c @:hxmc.framework("AutomaticAssessmentConfiguration") extern class AutomaticAssessmentConfiguration {
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	public static final AEAppleMenuItemAboutThisMac : NSString;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	public static final AEAppleMenuItemAppStore : NSString;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	public static final AEAppleMenuItemForceQuit : NSString;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	public static final AEAppleMenuItemLocation : NSString;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	public static final AEAppleMenuItemLockScreen : NSString;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	public static final AEAppleMenuItemLogout : NSString;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	public static final AEAppleMenuItemRecent : NSString;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	public static final AEAppleMenuItemRestart : NSString;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	public static final AEAppleMenuItemShutDown : NSString;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	public static final AEAppleMenuItemSleep : NSString;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	public static final AEAppleMenuItemSystemInformation : NSString;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	public static final AEAppleMenuItemSystemSettings : NSString;
+	@:hxmc.available(macos >= version("10.15.4"))
 	public static final AEAssessmentErrorDomain : NSString;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	public static final AEMenuBarItemBattery : NSString;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	public static final AEMenuBarItemBluetooth : NSString;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	public static final AEMenuBarItemClock : NSString;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	public static final AEMenuBarItemDisplays : NSString;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	public static final AEMenuBarItemKeyboard : NSString;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	public static final AEMenuBarItemVolume : NSString;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	public static final AEMenuBarItemWifi : NSString;
+	@:hxmc.available(macos >= 26.0, ios >= 26.0, maccatalyst >= 26.0)
 	public static final AENotInstalledParticipantsKey : NSString;
+	@:hxmc.available(macos >= 26.0, ios >= 26.0, maccatalyst >= 26.0)
 	public static final AERestrictedSystemParticipantsKey : NSString;
 }

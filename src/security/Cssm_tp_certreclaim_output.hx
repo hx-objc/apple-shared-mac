@@ -8,6 +8,7 @@ import hxmc.unsafe.Ptr;
 	public var ReclaimStatus : Int;
 	public var ReclaimedCertGroup : Ptr;
 	public var KeyCacheHandle : I64;
+	@:hxmc.unsafe
 	public inline function new(ReclaimStatus:Int, ReclaimedCertGroup:Ptr, KeyCacheHandle:I64) {
 		this.ReclaimStatus = ReclaimStatus;
 		this.ReclaimedCertGroup = ReclaimedCertGroup;

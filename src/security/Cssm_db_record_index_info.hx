@@ -7,6 +7,7 @@ import hxmc.unsafe.Ptr;
 	public var DataRecordType : Int;
 	public var NumberOfIndexes : Int;
 	public var IndexInfo : Ptr;
+	@:hxmc.unsafe
 	public inline function new(DataRecordType:Int, NumberOfIndexes:Int, IndexInfo:Ptr) {
 		this.DataRecordType = DataRecordType;
 		this.NumberOfIndexes = NumberOfIndexes;

@@ -6,9 +6,13 @@ import foundation.NSString;
 import hxmc.unsafe.Ptr;
 import objc.NSObjectProtocol;
 
-@:hxmc.objc("CMIOExtensionDeviceSource") extern interface CMIOExtensionDeviceSource extends NSObjectProtocol {
+@:hxmc.objc("CMIOExtensionDeviceSource") @:hxmc.available(macos >= 12.3, maccatalyst >= 15.4) extern interface CMIOExtensionDeviceSource extends NSObjectProtocol {
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var availableProperties(get, never) : NSSet<NSString>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_availableProperties():NSSet<NSString>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function devicePropertiesForProperties(properties:NSSet<NSString>, error:Ptr):Null<CMIOExtensionDeviceProperties>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function setDeviceProperties(deviceProperties:CMIOExtensionDeviceProperties, error:Ptr):Bool;
 }

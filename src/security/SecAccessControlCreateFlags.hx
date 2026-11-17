@@ -14,6 +14,7 @@ enum abstract SecAccessControlCreateFlags(I64) to I64 {
 	var kSecAccessControlDevicePasscode = 16;
 	@:deprecated
 	var kSecAccessControlWatch = 32;
+	@:hxmc.available(macos >= 15.0, ios >= 18.0, maccatalyst >= 18.0)
 	var kSecAccessControlCompanion = 32;
 	var kSecAccessControlOr = 16384;
 	var kSecAccessControlAnd = 32768;

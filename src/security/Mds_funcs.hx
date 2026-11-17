@@ -19,6 +19,7 @@ import hxmc.unsafe.Ptr;
 	public var FreeUniqueRecord : Ptr;
 	public var CreateRelation : Ptr;
 	public var DestroyRelation : Ptr;
+	@:hxmc.unsafe
 	public inline function new(DbOpen:Ptr, DbClose:Ptr, GetDbNames:Ptr, GetDbNameFromHandle:Ptr, FreeNameList:Ptr, DataInsert:Ptr, DataDelete:Ptr, DataModify:Ptr, DataGetFirst:Ptr, DataGetNext:Ptr, DataAbortQuery:Ptr, DataGetFromUniqueRecordId:Ptr, FreeUniqueRecord:Ptr, CreateRelation:Ptr, DestroyRelation:Ptr) {
 		this.DbOpen = DbOpen;
 		this.DbClose = DbClose;

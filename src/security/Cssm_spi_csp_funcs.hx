@@ -61,6 +61,7 @@ import hxmc.unsafe.Ptr;
 	public var ChangeKeyOwner : Ptr;
 	public var GetLoginOwner : Ptr;
 	public var ChangeLoginOwner : Ptr;
+	@:hxmc.unsafe
 	public inline function new(EventNotify:Ptr, QuerySize:Ptr, SignData:Ptr, SignDataInit:Ptr, SignDataUpdate:Ptr, SignDataFinal:Ptr, VerifyData:Ptr, VerifyDataInit:Ptr, VerifyDataUpdate:Ptr, VerifyDataFinal:Ptr, DigestData:Ptr, DigestDataInit:Ptr, DigestDataUpdate:Ptr, DigestDataClone:Ptr, DigestDataFinal:Ptr, GenerateMac:Ptr, GenerateMacInit:Ptr, GenerateMacUpdate:Ptr, GenerateMacFinal:Ptr, VerifyMac:Ptr, VerifyMacInit:Ptr, VerifyMacUpdate:Ptr, VerifyMacFinal:Ptr, EncryptData:Ptr, EncryptDataInit:Ptr, EncryptDataUpdate:Ptr, EncryptDataFinal:Ptr, DecryptData:Ptr, DecryptDataInit:Ptr, DecryptDataUpdate:Ptr, DecryptDataFinal:Ptr, QueryKeySizeInBits:Ptr, GenerateKey:Ptr, GenerateKeyPair:Ptr, GenerateRandom:Ptr, GenerateAlgorithmParams:Ptr, WrapKey:Ptr, UnwrapKey:Ptr, DeriveKey:Ptr, FreeKey:Ptr, PassThrough:Ptr, Login:Ptr, Logout:Ptr, ChangeLoginAcl:Ptr, ObtainPrivateKeyFromPublicKey:Ptr, RetrieveUniqueId:Ptr, RetrieveCounter:Ptr, VerifyDevice:Ptr, GetTimeValue:Ptr, GetOperationalStatistics:Ptr, GetLoginAcl:Ptr, GetKeyAcl:Ptr, ChangeKeyAcl:Ptr, GetKeyOwner:Ptr, ChangeKeyOwner:Ptr, GetLoginOwner:Ptr, ChangeLoginOwner:Ptr) {
 		this.EventNotify = EventNotify;
 		this.QuerySize = QuerySize;

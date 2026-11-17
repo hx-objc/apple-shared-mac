@@ -9,6 +9,7 @@ import hxmc.unsafe.Ptr;
 	public var NumberOfSelectionFields : Int;
 	public var SelectionFields : Ptr;
 	public var UserCredentials : Ptr;
+	@:hxmc.unsafe
 	public inline function new(CLHandle:I64, NumberOfSelectionFields:Int, SelectionFields:Ptr, UserCredentials:Ptr) {
 		this.CLHandle = CLHandle;
 		this.NumberOfSelectionFields = NumberOfSelectionFields;

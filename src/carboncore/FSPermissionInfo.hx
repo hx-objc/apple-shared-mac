@@ -12,6 +12,7 @@ import hxmc.unsafe.UInt8;
 	public var userAccess : UInt8;
 	public var mode : UInt16;
 	public var fileSec : Ptr;
+	@:hxmc.unsafe
 	public inline function new(userID:Int, groupID:Int, reserved1:UInt8, userAccess:UInt8, mode:UInt16, fileSec:Ptr) {
 		this.userID = userID;
 		this.groupID = groupID;

@@ -6,6 +6,7 @@ import hxmc.unsafe.Ptr;
 @:hxmc.struct class Cssm_tp_verify_context_result {
 	public var NumberOfEvidences : Int;
 	public var Evidence : Ptr;
+	@:hxmc.unsafe
 	public inline function new(NumberOfEvidences:Int, Evidence:Ptr) {
 		this.NumberOfEvidences = NumberOfEvidences;
 		this.Evidence = Evidence;

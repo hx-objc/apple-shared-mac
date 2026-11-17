@@ -8,6 +8,7 @@ import hxmc.unsafe.Ptr;
 	public var qFlags : Int16;
 	public var qHead : Ptr;
 	public var qTail : Ptr;
+	@:hxmc.unsafe
 	public inline function new(qFlags:Int16, qHead:Ptr, qTail:Ptr) {
 		this.qFlags = qFlags;
 		this.qHead = qHead;

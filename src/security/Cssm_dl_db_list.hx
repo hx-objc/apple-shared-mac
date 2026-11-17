@@ -6,6 +6,7 @@ import hxmc.unsafe.Ptr;
 @:hxmc.struct class Cssm_dl_db_list {
 	public var NumHandles : Int;
 	public var DLDBHandle : Ptr;
+	@:hxmc.unsafe
 	public inline function new(NumHandles:Int, DLDBHandle:Ptr) {
 		this.NumHandles = NumHandles;
 		this.DLDBHandle = DLDBHandle;

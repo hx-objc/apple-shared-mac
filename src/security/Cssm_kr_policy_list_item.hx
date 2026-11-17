@@ -13,6 +13,7 @@ import hxmc.unsafe.UInt8;
 	public var WorkFactor : UInt8;
 	public var PolicyFlags : Int;
 	public var AlgClass : Int;
+	@:hxmc.unsafe
 	public inline function new(next:Ptr, AlgorithmId:Int, Mode:Int, MaxKeyLength:Int, MaxRounds:Int, WorkFactor:UInt8, PolicyFlags:Int, AlgClass:Int) {
 		this.next = next;
 		this.AlgorithmId = AlgorithmId;

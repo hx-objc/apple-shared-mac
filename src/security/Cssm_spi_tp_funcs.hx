@@ -27,6 +27,7 @@ import hxmc.unsafe.Ptr;
 	public var CertGroupToTupleGroup : Ptr;
 	public var TupleGroupToCertGroup : Ptr;
 	public var PassThrough : Ptr;
+	@:hxmc.unsafe
 	public inline function new(SubmitCredRequest:Ptr, RetrieveCredResult:Ptr, ConfirmCredResult:Ptr, ReceiveConfirmation:Ptr, CertReclaimKey:Ptr, CertReclaimAbort:Ptr, FormRequest:Ptr, FormSubmit:Ptr, CertGroupVerify:Ptr, CertCreateTemplate:Ptr, CertGetAllTemplateFields:Ptr, CertSign:Ptr, CrlVerify:Ptr, CrlCreateTemplate:Ptr, CertRevoke:Ptr, CertRemoveFromCrlTemplate:Ptr, CrlSign:Ptr, ApplyCrlToDb:Ptr, CertGroupConstruct:Ptr, CertGroupPrune:Ptr, CertGroupToTupleGroup:Ptr, TupleGroupToCertGroup:Ptr, PassThrough:Ptr) {
 		this.SubmitCredRequest = SubmitCredRequest;
 		this.RetrieveCredResult = RetrieveCredResult;

@@ -7,6 +7,7 @@ import hxmc.unsafe.Ptr;
 	public var IssueStatus : Int;
 	public var Crl : Ptr;
 	public var CrlNextTime : Ptr;
+	@:hxmc.unsafe
 	public inline function new(IssueStatus:Int, Crl:Ptr, CrlNextTime:Ptr) {
 		this.IssueStatus = IssueStatus;
 		this.Crl = Crl;

@@ -11,6 +11,7 @@ import hxmc.unsafe.Ptr;
 	public var IsLocal : Int;
 	public var AccessPath : Ptr;
 	public var Reserved : Ptr;
+	@:hxmc.unsafe
 	public inline function new(NumberOfRecordTypes:Int, DefaultParsingModules:Ptr, RecordAttributeNames:Ptr, RecordIndexes:Ptr, IsLocal:Int, AccessPath:Ptr, Reserved:Ptr) {
 		this.NumberOfRecordTypes = NumberOfRecordTypes;
 		this.DefaultParsingModules = DefaultParsingModules;

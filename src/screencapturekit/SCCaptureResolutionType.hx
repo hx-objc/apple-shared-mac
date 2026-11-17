@@ -4,8 +4,11 @@ package screencapturekit;
 import hxmc.I64;
 
 enum abstract SCCaptureResolutionType(I64) to I64 {
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	var Automatic = 0;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	var Best = 1;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	var Nominal = 2;
 	inline function new(v:I64) this = v;
 }

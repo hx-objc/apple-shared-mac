@@ -11,21 +11,34 @@ import hxmc.objc.Id;
 import hxmc.unsafe.Ptr;
 import objc.NSObject;
 
-@:hxmc.framework("CoreMediaIO") @:hxmc.objc extern class CMIOExtensionStreamCustomClockConfiguration extends NSObject implements NSCopying implements NSSecureCoding {
+@:hxmc.framework("CoreMediaIO") @:hxmc.objc @:hxmc.available(macos >= 12.3, maccatalyst >= 15.4) extern class CMIOExtensionStreamCustomClockConfiguration extends NSObject implements NSCopying implements NSSecureCoding {
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	static function alloc():CMIOExtensionStreamCustomClockConfiguration;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var clockName(get, never) : NSStringArg;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_clockName():NSStringArg;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var sourceIdentifier(get, never) : NSUUID;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_sourceIdentifier():NSUUID;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var getTimeCallMinimumInterval(get, never) : CMTime;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_getTimeCallMinimumInterval():CMTime;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var numberOfEventsForRateSmoothing(get, never) : Int;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_numberOfEventsForRateSmoothing():Int;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var numberOfAveragesForRateSmoothing(get, never) : Int;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_numberOfAveragesForRateSmoothing():Int;
 	static var supportsSecureCoding(get, never) : Bool;
 	static function get_supportsSecureCoding():Bool;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	static function customClockConfigurationWithClockName(clockName:NSStringArg, sourceIdentifier:NSUUID, getTimeCallMinimumInterval:CMTime, numberOfEventsForRateSmoothing:Int, numberOfAveragesForRateSmoothing:Int):CMIOExtensionStreamCustomClockConfiguration;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function initWithClockName(clockName:NSStringArg, sourceIdentifier:NSUUID, getTimeCallMinimumInterval:CMTime, numberOfEventsForRateSmoothing:Int, numberOfAveragesForRateSmoothing:Int):CMIOExtensionStreamCustomClockConfiguration;
 	function copyWithZone(zone:Ptr):Id;
 	function encodeWithCoder(coder:NSCoder):Void;

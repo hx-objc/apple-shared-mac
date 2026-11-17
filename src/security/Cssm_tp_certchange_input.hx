@@ -12,6 +12,7 @@ import hxmc.unsafe.Ptr;
 	public var ChangeInfo : Ptr;
 	public var StartTime : Ptr;
 	public var CallerCredentials : Ptr;
+	@:hxmc.unsafe
 	public inline function new(Action:Int, Reason:Int, CLHandle:I64, Cert:Ptr, ChangeInfo:Ptr, StartTime:Ptr, CallerCredentials:Ptr) {
 		this.Action = Action;
 		this.Reason = Reason;

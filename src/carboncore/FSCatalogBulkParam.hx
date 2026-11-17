@@ -26,6 +26,7 @@ import hxmc.unsafe.UInt8;
 	public var specs : Ptr;
 	public var names : Ptr;
 	public var searchParams : Ptr;
+	@:hxmc.unsafe
 	public inline function new(qLink:Ptr, qType:Int16, ioTrap:Int16, ioCmdAddr:Ptr, ioCompletion:Ptr, ioResult:Int16, containerChanged:Bool, reserved:UInt8, iteratorFlags:Int, iterator:Ptr, container:Ptr, maximumItems:I64, actualItems:I64, whichInfo:Int, catalogInfo:Ptr, refs:Ptr, specs:Ptr, names:Ptr, searchParams:Ptr) {
 		this.qLink = qLink;
 		this.qType = qType;

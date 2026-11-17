@@ -5,6 +5,7 @@ import foundation.NSDictionary;
 import foundation.NSString;
 import foundation.NSStringArg;
 import hxmc.I64;
+import hxmc.Span;
 import hxmc.objc.Id;
 import hxmc.unsafe.Ptr;
 import objc.NSObject;
@@ -54,7 +55,8 @@ import objc.NSObject;
 	public static function IOSurfaceGetWidthOfPlane(buffer:IOSurface, planeIndex:I64):I64;
 	public static function IOSurfaceIncrementUseCount(buffer:IOSurface):Void;
 	public static function IOSurfaceIsInUse(buffer:IOSurface):Bool;
-	public static function IOSurfaceLock(buffer:IOSurface, options:IOSurfaceLockOptions, seed:Ptr):Int;
+	@:hxmc.len(seed, 1)
+	public static function IOSurfaceLock(buffer:IOSurface, options:IOSurfaceLockOptions, seed:Span<Int>):Int;
 	@:hxmc.retained
 	public static function IOSurfaceLookup(csid:Int):Null<IOSurface>;
 	@:hxmc.retained
@@ -63,11 +65,14 @@ import objc.NSObject;
 	public static function IOSurfaceLookupFromXPCObject(xobj:NSObject):Null<IOSurface>;
 	public static function IOSurfaceRemoveAllValues(buffer:IOSurface):Void;
 	public static function IOSurfaceRemoveValue(buffer:IOSurface, key:NSStringArg):Void;
+	@:hxmc.available(macos >= 14.4, ios >= 17.4, maccatalyst >= 17.4)
 	public static function IOSurfaceSetOwnershipIdentity(buffer:IOSurface, task_id_token:Int, newLedgerTag:Int, newLedgerOptions:Int):Int;
-	public static function IOSurfaceSetPurgeable(buffer:IOSurface, newState:Int, oldState:Ptr):Int;
+	@:hxmc.len(oldState, 1)
+	public static function IOSurfaceSetPurgeable(buffer:IOSurface, newState:Int, oldState:Span<Int>):Int;
 	public static function IOSurfaceSetValue(buffer:IOSurface, key:NSStringArg, value:Id):Void;
 	public static function IOSurfaceSetValues(buffer:IOSurface, keysAndValues:NSDictionary):Void;
-	public static function IOSurfaceUnlock(buffer:IOSurface, options:IOSurfaceLockOptions, seed:Ptr):Int;
+	@:hxmc.len(seed, 1)
+	public static function IOSurfaceUnlock(buffer:IOSurface, options:IOSurfaceLockOptions, seed:Span<Int>):Int;
 	@:deprecated
 	public static final IOSurfacePropertyAllocSizeKey : NSString;
 	public static final IOSurfacePropertyKeyAllocSize : NSString;
@@ -77,6 +82,7 @@ import objc.NSObject;
 	public static final IOSurfacePropertyKeyElementHeight : NSString;
 	public static final IOSurfacePropertyKeyElementWidth : NSString;
 	public static final IOSurfacePropertyKeyHeight : NSString;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	public static final IOSurfacePropertyKeyName : NSString;
 	public static final IOSurfacePropertyKeyOffset : NSString;
 	public static final IOSurfacePropertyKeyPixelFormat : NSString;
@@ -97,6 +103,7 @@ import objc.NSObject;
 	public static final kIOSurfaceBytesPerRow : NSString;
 	public static final kIOSurfaceCacheMode : NSString;
 	public static final kIOSurfaceColorSpace : NSString;
+	@:hxmc.available(macos >= 15.0, ios >= 18.0, maccatalyst >= 18.0)
 	public static final kIOSurfaceContentHeadroom : NSString;
 	public static final kIOSurfaceElementHeight : NSString;
 	public static final kIOSurfaceElementWidth : NSString;
@@ -104,6 +111,7 @@ import objc.NSObject;
 	public static final kIOSurfaceICCProfile : NSString;
 	@:deprecated
 	public static final kIOSurfaceIsGlobal : NSString;
+	@:hxmc.available(macos >= 11.0)
 	public static final kIOSurfaceName : NSString;
 	public static final kIOSurfaceOffset : NSString;
 	public static final kIOSurfacePixelFormat : NSString;

@@ -24,6 +24,7 @@ import hxmc.unsafe.Ptr;
 	public var gdCCXData : Ptr;
 	public var gdCCXMask : Ptr;
 	public var gdExt : Ptr;
+	@:hxmc.unsafe
 	public inline function new(gdRefNum:Int16, gdID:Int16, gdType:Int16, gdITable:Ptr, gdResPref:Int16, gdSearchProc:Ptr, gdCompProc:Ptr, gdFlags:Int16, gdPMap:Ptr, gdRefCon:Int, gdNextGD:Ptr, gdRect:Rect, gdMode:Int, gdCCBytes:Int16, gdCCDepth:Int16, gdCCXData:Ptr, gdCCXMask:Ptr, gdExt:Ptr) {
 		this.gdRefNum = gdRefNum;
 		this.gdID = gdID;

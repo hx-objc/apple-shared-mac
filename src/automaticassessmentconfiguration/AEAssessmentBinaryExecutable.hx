@@ -8,16 +8,26 @@ import hxmc.objc.Id;
 import hxmc.unsafe.Ptr;
 import objc.NSObject;
 
-@:hxmc.framework("AutomaticAssessmentConfiguration") @:hxmc.objc extern class AEAssessmentBinaryExecutable extends NSObject implements NSCopying {
+@:hxmc.framework("AutomaticAssessmentConfiguration") @:hxmc.objc @:hxmc.available(macos >= 27.0, maccatalyst >= 27.0) extern class AEAssessmentBinaryExecutable extends NSObject implements NSCopying {
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	static function alloc():AEAssessmentBinaryExecutable;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	var binaryExecutableURL(get, never) : NSURL;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function get_binaryExecutableURL():NSURL;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	var teamIdentifier(get, never) : Null<NSStringArg>;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function get_teamIdentifier():Null<NSStringArg>;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	var requiresSignatureValidation(get, set) : Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function get_requiresSignatureValidation():Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function set_requiresSignatureValidation(v:Bool):Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	overload function initWithBinaryExecutableURL(binaryExecutableURL:NSURL):AEAssessmentBinaryExecutable;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	overload function initWithBinaryExecutableURL(binaryExecutableURL:NSURL, teamIdentifier:Null<NSStringArg>):AEAssessmentBinaryExecutable;
 	function copyWithZone(zone:Ptr):Id;
 }

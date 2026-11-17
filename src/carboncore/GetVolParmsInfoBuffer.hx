@@ -15,6 +15,7 @@ import hxmc.unsafe.Ptr;
 	public var vMExtendedAttributes : Int;
 	public var vMDeviceID : Ptr;
 	public var vMMaxNameLength : I64;
+	@:hxmc.unsafe
 	public inline function new(vMVersion:Int16, vMAttrib:Int, vMLocalHand:Ptr, vMServerAdr:Int, vMVolumeGrade:Int, vMForeignPrivID:Int16, vMExtendedAttributes:Int, vMDeviceID:Ptr, vMMaxNameLength:I64) {
 		this.vMVersion = vMVersion;
 		this.vMAttrib = vMAttrib;

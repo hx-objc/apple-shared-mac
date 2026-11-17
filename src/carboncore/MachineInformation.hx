@@ -5,6 +5,7 @@ import hxmc.unsafe.Ptr;
 
 @:hxmc.struct class MachineInformation {
 	public var __unusedMachineInformationField : Ptr;
+	@:hxmc.unsafe
 	public inline function new(__unusedMachineInformationField:Ptr) {
 		this.__unusedMachineInformationField = __unusedMachineInformationField;
 	}

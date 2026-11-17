@@ -21,6 +21,7 @@ import hxmc.unsafe.UInt16;
 	public var dataPageFaults : I64;
 	public var preemptions : I64;
 	public var cpuID : Ptr;
+	@:hxmc.unsafe
 	public inline function new(version:Int, name:Int, queueName:Int, runState:UInt16, lastCPU:UInt16, weight:Int, processID:Ptr, cpuTime:UnsignedWide, schedTime:UnsignedWide, creationTime:UnsignedWide, codePageFaults:I64, dataPageFaults:I64, preemptions:I64, cpuID:Ptr) {
 		this.version = version;
 		this.name = name;

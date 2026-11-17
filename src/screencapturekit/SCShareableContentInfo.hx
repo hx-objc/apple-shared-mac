@@ -5,13 +5,21 @@ import coregraphics.CGRect;
 import hxmc.unsafe.Float32;
 import objc.NSObject;
 
-@:hxmc.framework("ScreenCaptureKit") @:hxmc.objc extern class SCShareableContentInfo extends NSObject {
+@:hxmc.framework("ScreenCaptureKit") @:hxmc.objc @:hxmc.available(macos >= 14.0, maccatalyst >= 18.2) extern class SCShareableContentInfo extends NSObject {
+	@:hxmc.available(macos >= 14.0, maccatalyst >= 18.2)
 	static function alloc():SCShareableContentInfo;
+	@:hxmc.available(macos >= 14.0, maccatalyst >= 18.2)
 	var style(get, never) : SCShareableContentStyle;
+	@:hxmc.available(macos >= 14.0, maccatalyst >= 18.2)
 	function get_style():SCShareableContentStyle;
+	@:hxmc.available(macos >= 14.0, maccatalyst >= 18.2)
 	var pointPixelScale(get, never) : Float32;
+	@:hxmc.available(macos >= 14.0, maccatalyst >= 18.2)
 	function get_pointPixelScale():Float32;
+	@:hxmc.available(macos >= 14.0, maccatalyst >= 18.2)
 	var contentRect(get, never) : CGRect;
+	@:hxmc.available(macos >= 14.0, maccatalyst >= 18.2)
 	function get_contentRect():CGRect;
+	@:hxmc.available(macos >= 14.0, maccatalyst >= 18.2)
 	override function init():SCShareableContentInfo;
 }

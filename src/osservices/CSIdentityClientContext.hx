@@ -11,6 +11,7 @@ import hxmc.unsafe.Ptr;
 	public var release : Ptr;
 	public var copyDescription : Ptr;
 	public var statusUpdated : Ptr;
+	@:hxmc.unsafe
 	public inline function new(version:I64, info:Ptr, retain:Ptr, release:Ptr, copyDescription:Ptr, statusUpdated:Ptr) {
 		this.version = version;
 		this.info = info;

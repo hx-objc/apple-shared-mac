@@ -6,6 +6,7 @@ import hxmc.unsafe.Ptr;
 @:hxmc.struct class Cssm_authorizationgroup {
 	public var NumberOfAuthTags : Int;
 	public var AuthTags : Ptr;
+	@:hxmc.unsafe
 	public inline function new(NumberOfAuthTags:Int, AuthTags:Ptr) {
 		this.NumberOfAuthTags = NumberOfAuthTags;
 		this.AuthTags = AuthTags;

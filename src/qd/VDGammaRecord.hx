@@ -5,6 +5,7 @@ import hxmc.unsafe.Ptr;
 
 @:hxmc.struct class VDGammaRecord {
 	public var csGTable : Ptr;
+	@:hxmc.unsafe
 	public inline function new(csGTable:Ptr) {
 		this.csGTable = csGTable;
 	}

@@ -7,6 +7,7 @@ import hxmc.unsafe.Ptr;
 @:hxmc.struct class Cssm_data {
 	public var Length : I64;
 	public var Data : Ptr;
+	@:hxmc.unsafe
 	public inline function new(Length:I64, Data:Ptr) {
 		this.Length = Length;
 		this.Data = Data;

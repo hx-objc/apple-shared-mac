@@ -34,14 +34,24 @@ final class ATSFontConstants {
 	public static inline var kATSFontAutoActivationDisabled : Int = 1;
 	public static inline var kATSFontAutoActivationEnabled : Int = 2;
 	public static inline var kATSFontAutoActivationAsk : Int = 4;
+	@:hxmc.unsafe(gc)
 	public static final kATSQueryClientPID : NSString = cast hxmc.objc.Strings.toNSString("ATS client pid");
+	@:hxmc.unsafe(gc)
 	public static final kATSQueryQDFamilyName : NSString = cast hxmc.objc.Strings.toNSString("font family name");
+	@:hxmc.unsafe(gc)
 	public static final kATSQueryFontName : NSString = cast hxmc.objc.Strings.toNSString("font name");
+	@:hxmc.unsafe(gc)
 	public static final kATSQueryFontPostScriptName : NSString = cast hxmc.objc.Strings.toNSString("font PS name");
+	@:hxmc.unsafe(gc)
 	public static final kATSQueryFontNameTableEntries : NSString = cast hxmc.objc.Strings.toNSString("font name table entries");
+	@:hxmc.unsafe(gc)
 	public static final kATSFontNameTableCode : NSString = cast hxmc.objc.Strings.toNSString("font name code");
+	@:hxmc.unsafe(gc)
 	public static final kATSFontNameTablePlatform : NSString = cast hxmc.objc.Strings.toNSString("font platform code");
+	@:hxmc.unsafe(gc)
 	public static final kATSFontNameTableScript : NSString = cast hxmc.objc.Strings.toNSString("font script code");
+	@:hxmc.unsafe(gc)
 	public static final kATSFontNameTableLanguage : NSString = cast hxmc.objc.Strings.toNSString("font language code");
+	@:hxmc.unsafe(gc)
 	public static final kATSFontNameTableBytes : NSString = cast hxmc.objc.Strings.toNSString("font name table bytes");
 }

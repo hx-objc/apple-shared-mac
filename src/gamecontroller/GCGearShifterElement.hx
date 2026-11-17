@@ -6,17 +6,29 @@ import foundation.NSString;
 import foundation.NSStringArg;
 import objc.NSObject;
 
-@:hxmc.framework("GameController") @:hxmc.objc extern class GCGearShifterElement extends NSObject implements GCPhysicalInputElement {
+@:hxmc.framework("GameController") @:hxmc.objc @:hxmc.available(macos >= 13.0, maccatalyst >= 16.0) extern class GCGearShifterElement extends NSObject implements GCPhysicalInputElement {
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	static function alloc():GCGearShifterElement;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	var patternInput(get, never) : Null<GCSwitchPositionInput>;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	function get_patternInput():Null<GCSwitchPositionInput>;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	var sequentialInput(get, never) : Null<GCRelativeInput>;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	function get_sequentialInput():Null<GCRelativeInput>;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	var aliases(get, never) : NSSet<NSString>;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	function get_aliases():NSSet<NSString>;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	var localizedName(get, never) : Null<NSStringArg>;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	function get_localizedName():Null<NSStringArg>;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	var sfSymbolsName(get, never) : Null<NSStringArg>;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	function get_sfSymbolsName():Null<NSStringArg>;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	override function init():GCGearShifterElement;
 }

@@ -24,6 +24,7 @@ import hxmc.unsafe.Ptr;
 	public var newProc4 : Ptr;
 	public var newProc5 : Ptr;
 	public var newProc6 : Ptr;
+	@:hxmc.unsafe
 	public inline function new(textProc:Ptr, lineProc:Ptr, rectProc:Ptr, rRectProc:Ptr, ovalProc:Ptr, arcProc:Ptr, polyProc:Ptr, rgnProc:Ptr, bitsProc:Ptr, commentProc:Ptr, txMeasProc:Ptr, getPicProc:Ptr, putPicProc:Ptr, opcodeProc:Ptr, newProc1:Ptr, glyphsProc:Ptr, printerStatusProc:Ptr, newProc4:Ptr, newProc5:Ptr, newProc6:Ptr) {
 		this.textProc = textProc;
 		this.lineProc = lineProc;

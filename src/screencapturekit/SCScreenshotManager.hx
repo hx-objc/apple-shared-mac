@@ -7,11 +7,17 @@ import coremedia.CMSampleBuffer;
 import foundation.NSError;
 import objc.NSObject;
 
-@:hxmc.framework("ScreenCaptureKit") @:hxmc.objc extern class SCScreenshotManager extends NSObject {
+@:hxmc.framework("ScreenCaptureKit") @:hxmc.objc @:hxmc.available(macos >= 14.0, maccatalyst >= 18.2) extern class SCScreenshotManager extends NSObject {
+	@:hxmc.available(macos >= 14.0, maccatalyst >= 18.2)
 	static function alloc():SCScreenshotManager;
+	@:hxmc.available(macos >= 14.0, maccatalyst >= 18.2)
 	static function captureSampleBufferWithFilter(contentFilter:SCContentFilter, configuration:SCStreamConfiguration, completionHandler:Null<(Null<CMSampleBuffer>, Null<NSError>) -> Void>):Void;
+	@:hxmc.available(macos >= 14.0, maccatalyst >= 18.2)
 	static function captureImageWithFilter(contentFilter:SCContentFilter, configuration:SCStreamConfiguration, completionHandler:Null<(Null<CGImage>, Null<NSError>) -> Void>):Void;
+	@:hxmc.available(macos >= 15.2, maccatalyst >= 18.2)
 	static function captureImageInRect(rect:CGRect, completionHandler:Null<(Null<CGImage>, Null<NSError>) -> Void>):Void;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	static function captureScreenshotWithFilter(contentFilter:SCContentFilter, configuration:SCScreenshotConfiguration, completionHandler:Null<(Null<SCScreenshotOutput>, Null<NSError>) -> Void>):Void;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	static function captureScreenshotWithRect(rect:CGRect, configuration:SCScreenshotConfiguration, completionHandler:Null<(Null<SCScreenshotOutput>, Null<NSError>) -> Void>):Void;
 }

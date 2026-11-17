@@ -8,6 +8,7 @@ import hxmc.unsafe.Ptr;
 	public var item : Ptr;
 	public var keychain : Ptr;
 	public var pid : Int;
+	@:hxmc.unsafe
 	public inline function new(version:Int, item:Ptr, keychain:Ptr, pid:Int) {
 		this.version = version;
 		this.item = item;

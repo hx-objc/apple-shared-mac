@@ -8,17 +8,26 @@ import hxmc.objc.Id;
 import hxmc.unsafe.Ptr;
 import objc.NSObject;
 
-@:hxmc.framework("CoreMediaIO") @:hxmc.objc extern class CMIOExtensionPropertyState<ObjectType:(Id)=Id> extends NSObject implements NSCopying implements NSSecureCoding {
+@:hxmc.framework("CoreMediaIO") @:hxmc.objc @:hxmc.available(macos >= 12.3, maccatalyst >= 15.4) extern class CMIOExtensionPropertyState<ObjectType:(Id)=Id> extends NSObject implements NSCopying implements NSSecureCoding {
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	static function alloc<ObjectType:(Id)>():CMIOExtensionPropertyState<ObjectType>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var value(get, never) : Null<ObjectType>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_value():Null<ObjectType>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var attributes(get, never) : Null<CMIOExtensionPropertyAttributes<ObjectType>>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_attributes():Null<CMIOExtensionPropertyAttributes<ObjectType>>;
 	static var supportsSecureCoding(get, never) : Bool;
 	static function get_supportsSecureCoding():Bool;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	static overload function propertyStateWithValue<ObjectType:(Id)>(value:Null<ObjectType>):CMIOExtensionPropertyState<ObjectType>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	static overload function propertyStateWithValue<ObjectType:(Id)>(value:Null<ObjectType>, attributes:Null<CMIOExtensionPropertyAttributes<ObjectType>>):CMIOExtensionPropertyState<ObjectType>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	overload function initWithValue(value:Null<ObjectType>):CMIOExtensionPropertyState<ObjectType>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	overload function initWithValue(value:Null<ObjectType>, attributes:Null<CMIOExtensionPropertyAttributes<ObjectType>>):CMIOExtensionPropertyState<ObjectType>;
 	function copyWithZone(zone:Ptr):Id;
 	function encodeWithCoder(coder:NSCoder):Void;

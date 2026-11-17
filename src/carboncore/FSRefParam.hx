@@ -29,6 +29,7 @@ import hxmc.unsafe.UInt8;
 	public var newRef : Ptr;
 	public var textEncodingHint : Int;
 	public var outName : Ptr;
+	@:hxmc.unsafe
 	public inline function new(qLink:Ptr, qType:Int16, ioTrap:Int16, ioCmdAddr:Ptr, ioCompletion:Ptr, ioResult:Int16, ioNamePtr:Ptr, ioVRefNum:Int16, reserved1:Int16, reserved2:UInt8, reserved3:UInt8, ref:Ptr, whichInfo:Int, catInfo:Ptr, nameLength:I64, name:Ptr, ioDirID:Int, spec:Ptr, parentRef:Ptr, newRef:Ptr, textEncodingHint:Int, outName:Ptr) {
 		this.qLink = qLink;
 		this.qType = qType;

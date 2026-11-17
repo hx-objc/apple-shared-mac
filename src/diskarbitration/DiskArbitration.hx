@@ -46,13 +46,13 @@ import objc.NSObject;
 	public static function DADissenterCreate(allocator:Null<CFAllocator>, status:Int, string:Null<NSStringArg>):DADissenter;
 	public static function DADissenterGetStatus(dissenter:DADissenter):Int;
 	public static function DADissenterGetStatusString(dissenter:DADissenter):Null<NSString>;
-	public static function DARegisterDiskAppearedCallback(session:DAApprovalSession, match:Null<NSDictionary>, callback:Ptr, context:Ptr):Void;
-	public static function DARegisterDiskDescriptionChangedCallback(session:DAApprovalSession, match:Null<NSDictionary>, watch:Null<NSArray>, callback:Ptr, context:Ptr):Void;
-	public static function DARegisterDiskDisappearedCallback(session:DAApprovalSession, match:Null<NSDictionary>, callback:Ptr, context:Ptr):Void;
-	public static function DARegisterDiskEjectApprovalCallback(session:DAApprovalSession, match:Null<NSDictionary>, callback:Ptr, context:Ptr):Void;
-	public static function DARegisterDiskMountApprovalCallback(session:DAApprovalSession, match:Null<NSDictionary>, callback:Ptr, context:Ptr):Void;
-	public static function DARegisterDiskPeekCallback(session:DAApprovalSession, match:Null<NSDictionary>, order:I64, callback:Ptr, context:Ptr):Void;
-	public static function DARegisterDiskUnmountApprovalCallback(session:DAApprovalSession, match:Null<NSDictionary>, callback:Ptr, context:Ptr):Void;
+	public static function DARegisterDiskAppearedCallback(session:DAApprovalSession, match:Null<NSDictionary>, callback:(DADisk, Ptr) -> Void, context:Ptr):Void;
+	public static function DARegisterDiskDescriptionChangedCallback(session:DAApprovalSession, match:Null<NSDictionary>, watch:Null<NSArray>, callback:(DADisk, NSArray, Ptr) -> Void, context:Ptr):Void;
+	public static function DARegisterDiskDisappearedCallback(session:DAApprovalSession, match:Null<NSDictionary>, callback:(DADisk, Ptr) -> Void, context:Ptr):Void;
+	public static function DARegisterDiskEjectApprovalCallback(session:DAApprovalSession, match:Null<NSDictionary>, callback:(DADisk, Ptr) -> Null<DADissenter>, context:Ptr):Void;
+	public static function DARegisterDiskMountApprovalCallback(session:DAApprovalSession, match:Null<NSDictionary>, callback:(DADisk, Ptr) -> Null<DADissenter>, context:Ptr):Void;
+	public static function DARegisterDiskPeekCallback(session:DAApprovalSession, match:Null<NSDictionary>, order:I64, callback:(DADisk, Ptr) -> Void, context:Ptr):Void;
+	public static function DARegisterDiskUnmountApprovalCallback(session:DAApprovalSession, match:Null<NSDictionary>, callback:(DADisk, Ptr) -> Null<DADissenter>, context:Ptr):Void;
 	@:hxmc.retained
 	public static function DASessionCreate(allocator:Null<CFAllocator>):Null<DAApprovalSession>;
 	public static function DASessionGetTypeID():I64;
@@ -72,6 +72,7 @@ import objc.NSObject;
 	public static final kDADiskDescriptionDeviceTDMLockedKey : NSString;
 	public static final kDADiskDescriptionDeviceUnitKey : NSString;
 	public static final kDADiskDescriptionDeviceVendorKey : NSString;
+	@:hxmc.available(macos >= 14.4)
 	public static final kDADiskDescriptionFSKitPrefix : NSString;
 	public static final kDADiskDescriptionMatchMediaUnformatted : NSDictionary;
 	public static final kDADiskDescriptionMatchMediaWhole : NSDictionary;
@@ -97,6 +98,7 @@ import objc.NSObject;
 	public static final kDADiskDescriptionMediaUUIDKey : NSString;
 	public static final kDADiskDescriptionMediaWholeKey : NSString;
 	public static final kDADiskDescriptionMediaWritableKey : NSString;
+	@:hxmc.available(macos >= 26.0)
 	public static final kDADiskDescriptionRepairRunningKey : NSString;
 	public static final kDADiskDescriptionVolumeKindKey : NSString;
 	public static final kDADiskDescriptionVolumeMountableKey : NSString;

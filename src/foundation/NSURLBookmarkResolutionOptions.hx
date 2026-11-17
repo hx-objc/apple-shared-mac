@@ -7,6 +7,7 @@ enum abstract NSURLBookmarkResolutionOptions(I64) to I64 {
 	var WithoutUI = 256;
 	var WithoutMounting = 512;
 	var WithSecurityScope = 1024;
+	@:hxmc.available(macos >= 11.2)
 	var WithoutImplicitStartAccessing = 32768;
 	inline function new(v:I64) this = v;
 	var None = 0;

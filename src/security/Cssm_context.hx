@@ -14,6 +14,7 @@ import hxmc.unsafe.Ptr;
 	public var EncryptionProhibited : Int;
 	public var WorkFactor : Int;
 	public var Reserved : Int;
+	@:hxmc.unsafe
 	public inline function new(ContextType:Int, AlgorithmType:Int, NumberOfAttributes:Int, ContextAttributes:Ptr, CSPHandle:I64, Privileged:Int, EncryptionProhibited:Int, WorkFactor:Int, Reserved:Int) {
 		this.ContextType = ContextType;
 		this.AlgorithmType = AlgorithmType;

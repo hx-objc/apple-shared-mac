@@ -7,6 +7,7 @@ import hxmc.unsafe.Ptr;
 	public var NumberOfPolicyIds : Int;
 	public var PolicyIds : Ptr;
 	public var PolicyControl : Ptr;
+	@:hxmc.unsafe
 	public inline function new(NumberOfPolicyIds:Int, PolicyIds:Ptr, PolicyControl:Ptr) {
 		this.NumberOfPolicyIds = NumberOfPolicyIds;
 		this.PolicyIds = PolicyIds;

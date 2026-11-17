@@ -6,6 +6,7 @@ import hxmc.unsafe.Ptr;
 @:hxmc.struct class CMIODeviceSMPTETimeCallback {
 	public var mGetSMPTETimeProc : Ptr;
 	public var mRefCon : Ptr;
+	@:hxmc.unsafe
 	public inline function new(mGetSMPTETimeProc:Ptr, mRefCon:Ptr) {
 		this.mGetSMPTETimeProc = mGetSMPTETimeProc;
 		this.mRefCon = mRefCon;

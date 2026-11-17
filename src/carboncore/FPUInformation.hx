@@ -5,6 +5,7 @@ import hxmc.unsafe.Ptr;
 
 @:hxmc.struct class FPUInformation {
 	public var __unusedFPUInformationField : Ptr;
+	@:hxmc.unsafe
 	public inline function new(__unusedFPUInformationField:Ptr) {
 		this.__unusedFPUInformationField = __unusedFPUInformationField;
 	}

@@ -12,6 +12,7 @@ import hxmc.unsafe.Ptr;
 	public var noteProgress : Ptr;
 	public var noteMessage : Ptr;
 	public var releaseInfo : Ptr;
+	@:hxmc.unsafe
 	public inline function new(version:Int, beginDocument:Ptr, endDocument:Ptr, beginPage:Ptr, endPage:Ptr, noteProgress:Ptr, noteMessage:Ptr, releaseInfo:Ptr) {
 		this.version = version;
 		this.beginDocument = beginDocument;

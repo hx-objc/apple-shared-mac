@@ -10,6 +10,7 @@ import hxmc.unsafe.Ptr;
 	public var position : Ptr;
 	public var length : I64;
 	public var stringPosition : Ptr;
+	@:hxmc.unsafe
 	public inline function new(theToken:Int16, position:Ptr, length:I64, stringPosition:Ptr) {
 		this.theToken = theToken;
 		this.position = position;

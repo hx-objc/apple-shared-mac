@@ -16,6 +16,8 @@ import objc.NSObject;
 	function set_presentationContextProvider(v:Null<ASAuthorizationControllerPresentationContextProviding>):Null<ASAuthorizationControllerPresentationContextProviding>;
 	function initWithAuthorizationRequests(authorizationRequests:NSArray<ASAuthorizationRequest>):ASAuthorizationController;
 	function performRequests():Void;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	function performRequestsWithOptions(options:ASAuthorizationControllerRequestOptions):Void;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	function cancel():Void;
 }

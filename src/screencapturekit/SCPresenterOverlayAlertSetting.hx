@@ -4,8 +4,11 @@ package screencapturekit;
 import hxmc.I64;
 
 enum abstract SCPresenterOverlayAlertSetting(I64) to I64 {
+	@:hxmc.available(macos >= 14.0, maccatalyst >= 18.2)
 	var System = 0;
+	@:hxmc.available(macos >= 14.0, maccatalyst >= 18.2)
 	var Never = 1;
+	@:hxmc.available(macos >= 14.0, maccatalyst >= 18.2)
 	var Always = 2;
 	inline function new(v:I64) this = v;
 }

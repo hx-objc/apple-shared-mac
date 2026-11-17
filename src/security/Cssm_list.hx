@@ -7,6 +7,7 @@ import hxmc.unsafe.Ptr;
 	public var ListType : Int;
 	public var Head : Ptr;
 	public var Tail : Ptr;
+	@:hxmc.unsafe
 	public inline function new(ListType:Int, Head:Ptr, Tail:Ptr) {
 		this.ListType = ListType;
 		this.Head = Head;

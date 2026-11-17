@@ -4,12 +4,19 @@ package screencapturekit;
 import foundation.NSStringArg;
 import objc.NSObject;
 
-@:hxmc.framework("ScreenCaptureKit") @:hxmc.objc extern class SCRunningApplication extends NSObject {
+@:hxmc.framework("ScreenCaptureKit") @:hxmc.objc @:hxmc.available(macos >= 12.3, maccatalyst >= 18.2) extern class SCRunningApplication extends NSObject {
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	static function alloc():SCRunningApplication;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	var bundleIdentifier(get, never) : NSStringArg;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	function get_bundleIdentifier():NSStringArg;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	var applicationName(get, never) : NSStringArg;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	function get_applicationName():NSStringArg;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	var processID(get, never) : Int;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	function get_processID():Int;
 }

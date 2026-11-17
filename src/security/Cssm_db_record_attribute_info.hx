@@ -7,6 +7,7 @@ import hxmc.unsafe.Ptr;
 	public var DataRecordType : Int;
 	public var NumberOfAttributes : Int;
 	public var AttributeInfo : Ptr;
+	@:hxmc.unsafe
 	public inline function new(DataRecordType:Int, NumberOfAttributes:Int, AttributeInfo:Ptr) {
 		this.DataRecordType = DataRecordType;
 		this.NumberOfAttributes = NumberOfAttributes;

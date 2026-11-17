@@ -9,15 +9,22 @@ import hxmc.objc.Id;
 import hxmc.unsafe.Ptr;
 import objc.NSObject;
 
-@:hxmc.framework("CoreMediaIO") @:hxmc.objc extern class CMIOExtensionScheduledOutput extends NSObject implements NSCopying implements NSSecureCoding {
+@:hxmc.framework("CoreMediaIO") @:hxmc.objc @:hxmc.available(macos >= 12.3, maccatalyst >= 15.4) extern class CMIOExtensionScheduledOutput extends NSObject implements NSCopying implements NSSecureCoding {
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	static function alloc():CMIOExtensionScheduledOutput;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var sequenceNumber(get, never) : I64;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_sequenceNumber():I64;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var hostTimeInNanoseconds(get, never) : I64;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_hostTimeInNanoseconds():I64;
 	static var supportsSecureCoding(get, never) : Bool;
 	static function get_supportsSecureCoding():Bool;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	static function scheduledOutputWithSequenceNumber(sequenceNumber:I64, hostTimeInNanoseconds:I64):CMIOExtensionScheduledOutput;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function initWithSequenceNumber(sequenceNumber:I64, hostTimeInNanoseconds:I64):CMIOExtensionScheduledOutput;
 	function copyWithZone(zone:Ptr):Id;
 	function encodeWithCoder(coder:NSCoder):Void;

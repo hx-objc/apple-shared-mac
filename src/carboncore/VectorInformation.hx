@@ -5,6 +5,7 @@ import hxmc.unsafe.Ptr;
 
 @:hxmc.struct class VectorInformation {
 	public var __unusedVectorInformationField : Ptr;
+	@:hxmc.unsafe
 	public inline function new(__unusedVectorInformationField:Ptr) {
 		this.__unusedVectorInformationField = __unusedVectorInformationField;
 	}

@@ -5,12 +5,18 @@ import foundation.NSSet;
 import foundation.NSString;
 import objc.NSObject;
 
-@:hxmc.framework("SensitiveContentAnalysis") @:hxmc.objc extern class SCSensitivityAnalysis extends NSObject {
+@:hxmc.framework("SensitiveContentAnalysis") @:hxmc.objc @:hxmc.available(macos >= 14.0, ios >= 17.0, maccatalyst >= 17.0) extern class SCSensitivityAnalysis extends NSObject {
+	@:hxmc.available(macos >= 14.0, ios >= 17.0, maccatalyst >= 17.0)
 	static function alloc():SCSensitivityAnalysis;
+	@:hxmc.available(macos >= 14.0, ios >= 17.0, maccatalyst >= 17.0)
 	var sensitive(get, never) : Bool;
 	@:selector("isSensitive")
+	@:hxmc.available(macos >= 14.0, ios >= 17.0, maccatalyst >= 17.0)
 	function get_sensitive():Bool;
+	@:hxmc.available(macos >= 27.0, ios >= 27.0, maccatalyst >= 27.0)
 	var detectedTypes(get, never) : NSSet<NSString>;
+	@:hxmc.available(macos >= 27.0, ios >= 27.0, maccatalyst >= 27.0)
 	function get_detectedTypes():NSSet<NSString>;
+	@:hxmc.available(macos >= 14.0, ios >= 17.0, maccatalyst >= 17.0)
 	override function init():SCSensitivityAnalysis;
 }

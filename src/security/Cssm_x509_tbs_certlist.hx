@@ -11,6 +11,7 @@ import hxmc.unsafe.Ptr;
 	public var nextUpdate : Cssm_x509_time;
 	public var revokedCertificates : Ptr;
 	public var extensions : Cssm_x509_extensions;
+	@:hxmc.unsafe
 	public inline function new(version:Cssm_data, signature:SecAsn1AlgId, issuer:Cssm_x509_name, thisUpdate:Cssm_x509_time, nextUpdate:Cssm_x509_time, revokedCertificates:Ptr, extensions:Cssm_x509_extensions) {
 		this.version = version;
 		this.signature = signature;

@@ -4,21 +4,37 @@ package gamecontroller;
 import hxmc.I64;
 import objc.NSObject;
 
-@:hxmc.framework("GameController") @:hxmc.objc extern class GCRacingWheelInput extends GCRacingWheelInputState implements GCDevicePhysicalInput {
+@:hxmc.framework("GameController") @:hxmc.objc @:hxmc.available(macos >= 13.0, maccatalyst >= 16.0) extern class GCRacingWheelInput extends GCRacingWheelInputState implements GCDevicePhysicalInput {
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	static function alloc():GCRacingWheelInput;
+	@:hxmc.available(macos >= 14.0, ios >= 17.0, maccatalyst >= 17.0)
 	var queue(get, set) : Null<NSObject>;
+	@:hxmc.available(macos >= 14.0, ios >= 17.0, maccatalyst >= 17.0)
 	function get_queue():Null<NSObject>;
+	@:hxmc.available(macos >= 14.0, ios >= 17.0, maccatalyst >= 17.0)
 	function set_queue(v:Null<NSObject>):Null<NSObject>;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	var elementValueDidChangeHandler(get, set) : Null<(GCDevicePhysicalInput, GCPhysicalInputElement) -> Void>;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	function get_elementValueDidChangeHandler():Null<(GCDevicePhysicalInput, GCPhysicalInputElement) -> Void>;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	function set_elementValueDidChangeHandler(v:Null<(GCDevicePhysicalInput, GCPhysicalInputElement) -> Void>):Null<(GCDevicePhysicalInput, GCPhysicalInputElement) -> Void>;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	var inputStateAvailableHandler(get, set) : Null<GCDevicePhysicalInput -> Void>;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	function get_inputStateAvailableHandler():Null<GCDevicePhysicalInput -> Void>;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	function set_inputStateAvailableHandler(v:Null<GCDevicePhysicalInput -> Void>):Null<GCDevicePhysicalInput -> Void>;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	var inputStateQueueDepth(get, set) : I64;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	function get_inputStateQueueDepth():I64;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	function set_inputStateQueueDepth(v:I64):I64;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	function capture():GCRacingWheelInputState;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	function nextInputState():Null<GCRacingWheelInputState>;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 16.0)
 	override function init():GCRacingWheelInput;
 }

@@ -6,6 +6,7 @@ import hxmc.unsafe.Ptr;
 @:hxmc.struct class Cssm_x509_name {
 	public var numberOfRDNs : Int;
 	public var RelativeDistinguishedName : Ptr;
+	@:hxmc.unsafe
 	public inline function new(numberOfRDNs:Int, RelativeDistinguishedName:Ptr) {
 		this.numberOfRDNs = numberOfRDNs;
 		this.RelativeDistinguishedName = RelativeDistinguishedName;

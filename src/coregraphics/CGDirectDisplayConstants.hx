@@ -5,20 +5,35 @@ import foundation.NSString;
 
 final class CGDirectDisplayConstants {
 	public static inline var kCGNullDirectDisplay : Int = 0;
+	@:hxmc.unsafe(gc)
 	public static final kCGDisplayWidth : NSString = cast hxmc.objc.Strings.toNSString("Width");
+	@:hxmc.unsafe(gc)
 	public static final kCGDisplayHeight : NSString = cast hxmc.objc.Strings.toNSString("Height");
+	@:hxmc.unsafe(gc)
 	public static final kCGDisplayMode : NSString = cast hxmc.objc.Strings.toNSString("Mode");
+	@:hxmc.unsafe(gc)
 	public static final kCGDisplayBitsPerPixel : NSString = cast hxmc.objc.Strings.toNSString("BitsPerPixel");
+	@:hxmc.unsafe(gc)
 	public static final kCGDisplayBitsPerSample : NSString = cast hxmc.objc.Strings.toNSString("BitsPerSample");
+	@:hxmc.unsafe(gc)
 	public static final kCGDisplaySamplesPerPixel : NSString = cast hxmc.objc.Strings.toNSString("SamplesPerPixel");
+	@:hxmc.unsafe(gc)
 	public static final kCGDisplayRefreshRate : NSString = cast hxmc.objc.Strings.toNSString("RefreshRate");
+	@:hxmc.unsafe(gc)
 	public static final kCGDisplayModeUsableForDesktopGUI : NSString = cast hxmc.objc.Strings.toNSString("UsableForDesktopGUI");
+	@:hxmc.unsafe(gc)
 	public static final kCGDisplayIOFlags : NSString = cast hxmc.objc.Strings.toNSString("IOFlags");
+	@:hxmc.unsafe(gc)
 	public static final kCGDisplayBytesPerRow : NSString = cast hxmc.objc.Strings.toNSString("kCGDisplayBytesPerRow");
+	@:hxmc.unsafe(gc)
 	public static final kCGIODisplayModeID : NSString = cast hxmc.objc.Strings.toNSString("IODisplayModeID");
+	@:hxmc.unsafe(gc)
 	public static final kCGDisplayModeIsSafeForHardware : NSString = cast hxmc.objc.Strings.toNSString("kCGDisplayModeIsSafeForHardware");
+	@:hxmc.unsafe(gc)
 	public static final kCGDisplayModeIsInterlaced : NSString = cast hxmc.objc.Strings.toNSString("kCGDisplayModeIsInterlaced");
+	@:hxmc.unsafe(gc)
 	public static final kCGDisplayModeIsStretched : NSString = cast hxmc.objc.Strings.toNSString("kCGDisplayModeIsStretched");
+	@:hxmc.unsafe(gc)
 	public static final kCGDisplayModeIsTelevisionOutput : NSString = cast hxmc.objc.Strings.toNSString("kCGDisplayModeIsTelevisionOutput");
 	public static inline var CGDisplayNoErr : Int = 0;
 }

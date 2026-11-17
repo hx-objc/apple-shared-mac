@@ -11,28 +11,51 @@ import foundation.NSUUID;
 import hxmc.I64;
 import objc.NSObject;
 
-@:hxmc.framework("CoreMediaIO") @:hxmc.objc extern class CMIOExtensionStream extends NSObject {
+@:hxmc.framework("CoreMediaIO") @:hxmc.objc @:hxmc.available(macos >= 12.3, maccatalyst >= 15.4) extern class CMIOExtensionStream extends NSObject {
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	static function alloc():CMIOExtensionStream;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var localizedName(get, never) : NSStringArg;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_localizedName():NSStringArg;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var streamID(get, never) : NSUUID;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_streamID():NSUUID;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var direction(get, never) : CMIOExtensionStreamDirection;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_direction():CMIOExtensionStreamDirection;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var clockType(get, never) : CMIOExtensionStreamClockType;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_clockType():CMIOExtensionStreamClockType;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var customClockConfiguration(get, never) : Null<CMIOExtensionStreamCustomClockConfiguration>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_customClockConfiguration():Null<CMIOExtensionStreamCustomClockConfiguration>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var source(get, never) : Null<CMIOExtensionStreamSource>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_source():Null<CMIOExtensionStreamSource>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var streamingClients(get, never) : NSArray<CMIOExtensionClient>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_streamingClients():NSArray<CMIOExtensionClient>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	static overload function streamWithLocalizedName(localizedName:NSStringArg, streamID:NSUUID, direction:CMIOExtensionStreamDirection, clockType:CMIOExtensionStreamClockType, source:CMIOExtensionStreamSource):CMIOExtensionStream;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	static overload function streamWithLocalizedName(localizedName:NSStringArg, streamID:NSUUID, direction:CMIOExtensionStreamDirection, customClockConfiguration:CMIOExtensionStreamCustomClockConfiguration, source:CMIOExtensionStreamSource):CMIOExtensionStream;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	overload function initWithLocalizedName(localizedName:NSStringArg, streamID:NSUUID, direction:CMIOExtensionStreamDirection, clockType:CMIOExtensionStreamClockType, source:CMIOExtensionStreamSource):CMIOExtensionStream;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	overload function initWithLocalizedName(localizedName:NSStringArg, streamID:NSUUID, direction:CMIOExtensionStreamDirection, customClockConfiguration:CMIOExtensionStreamCustomClockConfiguration, source:CMIOExtensionStreamSource):CMIOExtensionStream;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function notifyPropertiesChanged(propertyStates:NSDictionary<NSString, CMIOExtensionPropertyState>):Void;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function sendSampleBuffer(sampleBuffer:CMSampleBuffer, discontinuity:CMIOExtensionStreamDiscontinuityFlags, hostTimeInNanoseconds:I64):Void;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function consumeSampleBufferFromClient(client:CMIOExtensionClient, completionHandler:(Null<CMSampleBuffer>, I64, CMIOExtensionStreamDiscontinuityFlags, Bool, Null<NSError>) -> Void):Void;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function notifyScheduledOutputChanged(scheduledOutput:CMIOExtensionScheduledOutput):Void;
 }

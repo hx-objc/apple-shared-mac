@@ -6,6 +6,7 @@ import hxmc.unsafe.Ptr;
 @:hxmc.struct class Cssm_tuplegroup {
 	public var NumberOfTuples : Int;
 	public var Tuples : Ptr;
+	@:hxmc.unsafe
 	public inline function new(NumberOfTuples:Int, Tuples:Ptr) {
 		this.NumberOfTuples = NumberOfTuples;
 		this.Tuples = Tuples;

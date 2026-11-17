@@ -6,6 +6,7 @@ import hxmc.unsafe.Ptr;
 @:hxmc.struct class Cssm_samplegroup {
 	public var NumberOfSamples : Int;
 	public var Samples : Ptr;
+	@:hxmc.unsafe
 	public inline function new(NumberOfSamples:Int, Samples:Ptr) {
 		this.NumberOfSamples = NumberOfSamples;
 		this.Samples = Samples;

@@ -14,6 +14,7 @@ import hxmc.unsafe.UInt16;
 	public var procDescriptor : Ptr;
 	public var reserved2 : Int;
 	public var selector : Int;
+	@:hxmc.unsafe
 	public inline function new(procInfo:I64, reserved1:Int8, ISA:Int8, routineFlags:UInt16, procDescriptor:Ptr, reserved2:Int, selector:Int) {
 		this.procInfo = procInfo;
 		this.reserved1 = reserved1;

@@ -7,6 +7,7 @@ import hxmc.unsafe.Ptr;
 	public var VerifyStatus : Int;
 	public var NumberOfEvidence : Int;
 	public var Evidence : Ptr;
+	@:hxmc.unsafe
 	public inline function new(VerifyStatus:Int, NumberOfEvidence:Int, Evidence:Ptr) {
 		this.VerifyStatus = VerifyStatus;
 		this.NumberOfEvidence = NumberOfEvidence;

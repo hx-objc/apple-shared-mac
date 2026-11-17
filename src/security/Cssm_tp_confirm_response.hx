@@ -6,6 +6,7 @@ import hxmc.unsafe.Ptr;
 @:hxmc.struct class Cssm_tp_confirm_response {
 	public var NumberOfResponses : Int;
 	public var Responses : Ptr;
+	@:hxmc.unsafe
 	public inline function new(NumberOfResponses:Int, Responses:Ptr) {
 		this.NumberOfResponses = NumberOfResponses;
 		this.Responses = Responses;

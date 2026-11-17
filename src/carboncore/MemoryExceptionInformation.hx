@@ -9,6 +9,7 @@ import hxmc.unsafe.Ptr;
 	public var theAddress : Ptr;
 	public var theError : Int;
 	public var theReference : I64;
+	@:hxmc.unsafe
 	public inline function new(theArea:Ptr, theAddress:Ptr, theError:Int, theReference:I64) {
 		this.theArea = theArea;
 		this.theAddress = theAddress;

@@ -25,6 +25,7 @@ import hxmc.unsafe.UInt8;
 	public var reserved1 : UInt8;
 	public var forkRefNum : Int;
 	public var newRef : Ptr;
+	@:hxmc.unsafe
 	public inline function new(qLink:Ptr, qType:Int16, ioTrap:Int16, ioCmdAddr:Ptr, ioCompletion:Ptr, ioResult:Int16, parentRef:Ptr, nameLength:I64, name:Ptr, whichInfo:Int, catInfo:Ptr, forkNameLength:I64, forkName:Ptr, permissions:Int8, reserved1:UInt8, forkRefNum:Int, newRef:Ptr) {
 		this.qLink = qLink;
 		this.qType = qType;

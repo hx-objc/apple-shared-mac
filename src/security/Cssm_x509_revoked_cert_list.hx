@@ -6,6 +6,7 @@ import hxmc.unsafe.Ptr;
 @:hxmc.struct class Cssm_x509_revoked_cert_list {
 	public var numberOfRevokedCertEntries : Int;
 	public var revokedCertEntry : Ptr;
+	@:hxmc.unsafe
 	public inline function new(numberOfRevokedCertEntries:Int, revokedCertEntry:Ptr) {
 		this.numberOfRevokedCertEntries = numberOfRevokedCertEntries;
 		this.revokedCertEntry = revokedCertEntry;

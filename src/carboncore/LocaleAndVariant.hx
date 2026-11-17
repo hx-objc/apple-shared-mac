@@ -6,6 +6,7 @@ import hxmc.unsafe.Ptr;
 @:hxmc.struct class LocaleAndVariant {
 	public var locale : Ptr;
 	public var opVariant : Int;
+	@:hxmc.unsafe
 	public inline function new(locale:Ptr, opVariant:Int) {
 		this.locale = locale;
 		this.opVariant = opVariant;

@@ -4,42 +4,80 @@ package printcore;
 import foundation.NSString;
 
 final class PMPrintingDialogExtensionsConstants {
+	@:hxmc.unsafe(gc)
 	public static final kPMPageAttributesKindID : NSString = cast hxmc.objc.Strings.toNSString("com.apple.print.pde.PageAttributesKind");
+	@:hxmc.unsafe(gc)
 	public static final kPMCopiesAndPagesPDEKindID : NSString = cast hxmc.objc.Strings.toNSString("com.apple.print.pde.CopiesAndPagesKind");
+	@:hxmc.unsafe(gc)
 	public static final kPMLayoutPDEKindID : NSString = cast hxmc.objc.Strings.toNSString("com.apple.print.pde.LayoutUserOptionKind");
+	@:hxmc.unsafe(gc)
 	public static final kPMOutputOptionsPDEKindID : NSString = cast hxmc.objc.Strings.toNSString("com.apple.print.pde.OutputOptionsKind");
+	@:hxmc.unsafe(gc)
 	public static final kPMDuplexPDEKindID : NSString = cast hxmc.objc.Strings.toNSString("com.apple.print.pde.DuplexKind");
+	@:hxmc.unsafe(gc)
 	public static final kPMCustomPaperSizePDEKindID : NSString = cast hxmc.objc.Strings.toNSString("com.apple.print.pde.CustomPaperSizeKind");
+	@:hxmc.unsafe(gc)
 	public static final kPMCoverPagePDEKindID : NSString = cast hxmc.objc.Strings.toNSString("com.apple.print.pde.CoverPageKind");
+	@:hxmc.unsafe(gc)
 	public static final kPMColorMatchingPDEKindID : NSString = cast hxmc.objc.Strings.toNSString("com.apple.print.pde.ColorMatchingKind");
+	@:hxmc.unsafe(gc)
 	public static final kPMSchedulerPDEKindID : NSString = cast hxmc.objc.Strings.toNSString("com.apple.print.pde.SchedulerKind");
+	@:hxmc.unsafe(gc)
 	public static final kPMImagingOptionsPDEKindID : NSString = cast hxmc.objc.Strings.toNSString("com.apple.print.pde.ImagingOptionsKind");
+	@:hxmc.unsafe(gc)
 	public static final kPMFaxCoverPagePDEKindID : NSString = cast hxmc.objc.Strings.toNSString("com.apple.print.pde.FaxCoverPageKind");
+	@:hxmc.unsafe(gc)
 	public static final kPMFaxModemPDEKindID : NSString = cast hxmc.objc.Strings.toNSString("com.apple.print.pde.FaxModemKind");
+	@:hxmc.unsafe(gc)
 	public static final kPMFaxAddressesPDEKindID : NSString = cast hxmc.objc.Strings.toNSString("com.apple.print.pde.FaxAddressesKind");
+	@:hxmc.unsafe(gc)
 	public static final kPMPaperHandlingPDEKindID : NSString = cast hxmc.objc.Strings.toNSString("com.apple.print.pde.PaperHandlingKind");
+	@:hxmc.unsafe(gc)
 	public static final kPMPDFEffectsPDEKindID : NSString = cast hxmc.objc.Strings.toNSString("com.apple.print.pde.PDFEffects");
+	@:hxmc.unsafe(gc)
 	public static final kPMSummaryPanelKindID : NSString = cast hxmc.objc.Strings.toNSString("com.apple.print.pde.SummaryKind");
+	@:hxmc.unsafe(gc)
 	public static final kPMUniPrinterPDEKindID : NSString = cast hxmc.objc.Strings.toNSString("com.apple.print.pde.UniPrinterKind");
+	@:hxmc.unsafe(gc)
 	public static final kPMJobPINPDEKindID : NSString = cast hxmc.objc.Strings.toNSString("com.apple.print.pde.jobPIN");
+	@:hxmc.unsafe(gc)
 	public static final kPMPaperSourcePDEKindID : NSString = cast hxmc.objc.Strings.toNSString("com.apple.print.pde.PaperSourceKind");
+	@:hxmc.unsafe(gc)
 	public static final kPMPriorityPDEKindID : NSString = cast hxmc.objc.Strings.toNSString("com.apple.print.pde.PriorityKind");
+	@:hxmc.unsafe(gc)
 	public static final kPMRotationScalingPDEKindID : NSString = cast hxmc.objc.Strings.toNSString("com.apple.print.pde.RotationScalingKind");
+	@:hxmc.unsafe(gc)
 	public static final kPMUnsupportedPDEKindID : NSString = cast hxmc.objc.Strings.toNSString("com.apple.print.pde.UnsupportedPDEKind");
+	@:hxmc.unsafe(gc)
 	public static final kPMErrorHandlingPDEKindID : NSString = cast hxmc.objc.Strings.toNSString("com.apple.print.pde.ErrorHandlingKind");
+	@:hxmc.unsafe(gc)
 	public static final kPMPaperFeedPDEKindID : NSString = cast hxmc.objc.Strings.toNSString("com.apple.print.pde.PaperFeedKind");
+	@:hxmc.unsafe(gc)
 	public static final kPMPrinterFeaturesPDEKindID : NSString = cast hxmc.objc.Strings.toNSString("com.apple.print.pde.PrinterFeaturesKind");
+	@:hxmc.unsafe(gc)
 	public static final kPMInkPDEKindID : NSString = cast hxmc.objc.Strings.toNSString("com.apple.print.pde.InkKind");
+	@:hxmc.unsafe(gc)
 	public static final kPMColorPDEKindID : NSString = cast hxmc.objc.Strings.toNSString("com.apple.print.pde.ColorKind");
+	@:hxmc.unsafe(gc)
 	public static final kPMMediaQualityPDEKindID : NSString = cast hxmc.objc.Strings.toNSString("com.apple.print.pde.MediaQualityPDEKind");
+	@:hxmc.unsafe(gc)
 	public static final kPMWatermarkPDEKindID : NSString = cast hxmc.objc.Strings.toNSString("com.apple.print.pde.WatermarkPDEKind");
+	@:hxmc.unsafe(gc)
 	public static final SUMMARY_DISPLAY_ORDER : NSString = cast hxmc.objc.Strings.toNSString("Summary Display Order");
+	@:hxmc.unsafe(gc)
 	public static final kPMSandboxCompatiblePDEs : NSString = cast hxmc.objc.Strings.toNSString("PMSandboxCompatiblePDEs");
+	@:hxmc.unsafe(gc)
 	public static final kDialogExtensionIntfIDStr : NSString = cast hxmc.objc.Strings.toNSString("A996FD7E-B738-11D3-8519-0050E4603277");
+	@:hxmc.unsafe(gc)
 	public static final kGeneralPageSetupDialogTypeIDStr : NSString = cast hxmc.objc.Strings.toNSString("6E6ED964-B738-11D3-952F-0050E4603277");
+	@:hxmc.unsafe(gc)
 	public static final kGeneralPrintDialogTypeIDStr : NSString = cast hxmc.objc.Strings.toNSString("C1BF838E-B72A-11D3-9644-0050E4603277");
+	@:hxmc.unsafe(gc)
 	public static final kAppPageSetupDialogTypeIDStr : NSString = cast hxmc.objc.Strings.toNSString("B9A0DA98-E57F-11D3-9E83-0050E4603277");
+	@:hxmc.unsafe(gc)
 	public static final kAppPrintDialogTypeIDStr : NSString = cast hxmc.objc.Strings.toNSString("BCB07250-E57F-11D3-8CA6-0050E4603277");
+	@:hxmc.unsafe(gc)
 	public static final kAppPrintThumbnailTypeIDStr : NSString = cast hxmc.objc.Strings.toNSString("9320FE03-B5D5-11D5-84D1-003065D6135E");
+	@:hxmc.unsafe(gc)
 	public static final kPrinterModuleTypeIDStr : NSString = cast hxmc.objc.Strings.toNSString("BDB091F4-E57F-11D3-B5CC-0050E4603277");
 }

@@ -6,6 +6,7 @@ import hxmc.unsafe.Ptr;
 @:hxmc.struct class Cssm_name_list {
 	public var NumStrings : Int;
 	public var String : Ptr;
+	@:hxmc.unsafe
 	public inline function new(NumStrings:Int, String:Ptr) {
 		this.NumStrings = NumStrings;
 		this.String = String;

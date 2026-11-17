@@ -10,24 +10,40 @@ import hxmc.objc.Id;
 import hxmc.unsafe.Ptr;
 import objc.NSObject;
 
-@:hxmc.framework("AutomaticAssessmentConfiguration") @:hxmc.objc extern class AEAssessmentParticipantConfiguration extends NSObject implements NSCopying {
+@:hxmc.framework("AutomaticAssessmentConfiguration") @:hxmc.objc @:hxmc.available(macos >= 12.0) extern class AEAssessmentParticipantConfiguration extends NSObject implements NSCopying {
+	@:hxmc.available(macos >= 12.0)
 	static function alloc():AEAssessmentParticipantConfiguration;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	var allowedMenuItemLanguageIdentifiers(get, never) : NSSet<NSString>;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function get_allowedMenuItemLanguageIdentifiers():NSSet<NSString>;
+	@:hxmc.available(macos >= 12.0, ios >= 17.5)
 	var allowsNetworkAccess(get, set) : Bool;
+	@:hxmc.available(macos >= 12.0, ios >= 17.5)
 	function get_allowsNetworkAccess():Bool;
+	@:hxmc.available(macos >= 12.0, ios >= 17.5)
 	function set_allowsNetworkAccess(v:Bool):Bool;
+	@:hxmc.available(macos >= 26.0, ios >= 26.0, maccatalyst >= 26.0)
 	var required(get, set) : Bool;
 	@:selector("isRequired")
+	@:hxmc.available(macos >= 26.0, ios >= 26.0, maccatalyst >= 26.0)
 	function get_required():Bool;
+	@:hxmc.available(macos >= 26.0, ios >= 26.0, maccatalyst >= 26.0)
 	function set_required(v:Bool):Bool;
+	@:hxmc.available(macos >= 15.0, ios >= 18.0, maccatalyst >= 18.0)
 	var configurationInfo(get, set) : NSDictionary<NSString, Id>;
+	@:hxmc.available(macos >= 15.0, ios >= 18.0, maccatalyst >= 18.0)
 	function get_configurationInfo():NSDictionary<NSString, Id>;
+	@:hxmc.available(macos >= 15.0, ios >= 18.0, maccatalyst >= 18.0)
 	function set_configurationInfo(v:NSDictionary<NSString, Id>):NSDictionary<NSString, Id>;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function allowedMenuItemsForLanguageIdentifier(languageIdentifier:NSStringArg):Null<NSSet<NSString>>;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function setAllowedMenuItems(menuItems:Null<NSSet<NSString>>, forLanguageIdentifier:NSStringArg):Void;
+	@:hxmc.available(macos >= 12.0, ios >= 17.5)
 	override function init():AEAssessmentParticipantConfiguration;
 	@:selector("new")
+	@:hxmc.available(macos >= 12.0, ios >= 17.5)
 	static function new_():AEAssessmentParticipantConfiguration;
 	function copyWithZone(zone:Ptr):Id;
 }

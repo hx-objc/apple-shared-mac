@@ -17,6 +17,7 @@ import hxmc.unsafe.Ptr;
 	public var sniffProc : Ptr;
 	public var clearContextInfoProc : Ptr;
 	public var pluginState : TECPluginStateRec;
+	@:hxmc.unsafe
 	public inline function new(pluginRec:Ptr, encoding:Int, maxErrors:I64, maxFeatures:I64, textInputBuffer:Ptr, textInputBufferEnd:Ptr, numFeatures:I64, numErrors:I64, contextRefCon:Ptr, sniffProc:Ptr, clearContextInfoProc:Ptr, pluginState:TECPluginStateRec) {
 		this.pluginRec = pluginRec;
 		this.encoding = encoding;

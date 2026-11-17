@@ -4,22 +4,40 @@ package mediaextension;
 import foundation.NSString;
 
 final class MEExtensionPluginConstants {
+	@:hxmc.unsafe(gc)
 	public static final kMEFormatReaderExtensionPointName : NSString = cast hxmc.objc.Strings.toNSString("com.apple.mediaextension.formatreader");
+	@:hxmc.unsafe(gc)
 	public static final kMEVideoDecoderExtensionPointName : NSString = cast hxmc.objc.Strings.toNSString("com.apple.mediaextension.videodecoder");
+	@:hxmc.unsafe(gc)
 	public static final kMERAWProcessorExtensionPointName : NSString = cast hxmc.objc.Strings.toNSString("com.apple.mediaextension.rawprocessor");
+	@:hxmc.unsafe(gc)
 	public static final kMEFormatReaderClassImplementationIDKey : NSString = cast hxmc.objc.Strings.toNSString("ClassImplementationID");
+	@:hxmc.unsafe(gc)
 	public static final kMEFormatReaderUTTypeArrayKey : NSString = cast hxmc.objc.Strings.toNSString("MTUTTypeArray");
+	@:hxmc.unsafe(gc)
 	public static final kMEFormatReaderFileNameExtensionArrayKey : NSString = cast hxmc.objc.Strings.toNSString("MTFileNameExtensionArray");
+	@:hxmc.unsafe(gc)
 	public static final kMEFormatReaderSidecarFileNameExtensionArrayKey : NSString = cast hxmc.objc.Strings.toNSString("MTSidecarFileNameExtensionArray");
+	@:hxmc.unsafe(gc)
 	public static final kMEFormatReaderObjectNameKey : NSString = cast hxmc.objc.Strings.toNSString("ObjectName");
+	@:hxmc.unsafe(gc)
 	public static final kMEVideoDecoderClassImplementationIDKey : NSString = cast hxmc.objc.Strings.toNSString("ClassImplementationID");
+	@:hxmc.unsafe(gc)
 	public static final kMEVideoDecoderCodecInfoKey : NSString = cast hxmc.objc.Strings.toNSString("CodecInfo");
+	@:hxmc.unsafe(gc)
 	public static final kMEVideoDecoderCodecTypeKey : NSString = cast hxmc.objc.Strings.toNSString("CodecType");
+	@:hxmc.unsafe(gc)
 	public static final kMEVideoDecoderCodecNameKey : NSString = cast hxmc.objc.Strings.toNSString("CodecName");
+	@:hxmc.unsafe(gc)
 	public static final kMEVideoDecoderObjectNameKey : NSString = cast hxmc.objc.Strings.toNSString("ObjectName");
+	@:hxmc.unsafe(gc)
 	public static final kMERAWProcessorClassImplementationIDKey : NSString = cast hxmc.objc.Strings.toNSString("ClassImplementationID");
+	@:hxmc.unsafe(gc)
 	public static final kMERAWProcessorProcessorInfoKey : NSString = cast hxmc.objc.Strings.toNSString("ProcessorInfo");
+	@:hxmc.unsafe(gc)
 	public static final kMERAWProcessorCodecTypeKey : NSString = cast hxmc.objc.Strings.toNSString("CodecType");
+	@:hxmc.unsafe(gc)
 	public static final kMERAWProcessorCodecNameKey : NSString = cast hxmc.objc.Strings.toNSString("CodecName");
+	@:hxmc.unsafe(gc)
 	public static final kMERAWProcessorObjectNameKey : NSString = cast hxmc.objc.Strings.toNSString("ObjectName");
 }

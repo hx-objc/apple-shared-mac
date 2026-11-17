@@ -12,6 +12,7 @@ import hxmc.unsafe.Ptr;
 	public var waitingTaskID : Ptr;
 	public var maximum : I64;
 	public var count : I64;
+	@:hxmc.unsafe
 	public inline function new(version:Int, processID:Ptr, semaphoreName:Int, nWaiting:I64, waitingTaskID:Ptr, maximum:I64, count:I64) {
 		this.version = version;
 		this.processID = processID;

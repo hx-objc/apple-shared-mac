@@ -4,9 +4,13 @@ package screencapturekit;
 import hxmc.I64;
 
 enum abstract SCShareableContentStyle(I64) to I64 {
+	@:hxmc.available(macos >= 12.3, ios >= 27.0, maccatalyst >= 18.2)
 	var None = 0;
+	@:hxmc.available(macos >= 12.3, ios >= 27.0, maccatalyst >= 18.2)
 	var Window = 1;
+	@:hxmc.available(macos >= 12.3, ios >= 27.0, maccatalyst >= 18.2)
 	var Display = 2;
+	@:hxmc.available(macos >= 12.3, ios >= 27.0, maccatalyst >= 18.2)
 	var Application = 3;
 	inline function new(v:I64) this = v;
 }

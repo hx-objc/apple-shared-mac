@@ -7,6 +7,7 @@ import foundation.NSString;
 import foundation.NSStringArg;
 import foundation.NSURL;
 import hxmc.I64;
+import hxmc.Span;
 import hxmc.objc.Id;
 import hxmc.unsafe.Int16;
 import hxmc.unsafe.Ptr;
@@ -36,13 +37,16 @@ import hxmc.unsafe.UInt16;
 	@:deprecated
 	public static function DisposeSpeechWordUPP(userUPP:Ptr):Void;
 	@:deprecated
-	public static function GetIndVoice(index:Int16, voice:Ptr):Int16;
+	@:hxmc.len(voice, 1)
+	public static function GetIndVoice(index:Int16, voice:Span<VoiceSpec>):Int16;
 	@:deprecated
 	public static function GetSpeechInfo(chan:Ptr, selector:Int, speechInfo:Ptr):Int16;
 	@:deprecated
-	public static function GetSpeechPitch(chan:Ptr, pitch:Ptr):Int16;
+	@:hxmc.len(pitch, 1)
+	public static function GetSpeechPitch(chan:Ptr, pitch:Span<Int>):Int16;
 	@:deprecated
-	public static function GetSpeechRate(chan:Ptr, rate:Ptr):Int16;
+	@:hxmc.len(rate, 1)
+	public static function GetSpeechRate(chan:Ptr, rate:Span<Int>):Int16;
 	@:deprecated
 	public static function GetVoiceDescription(voice:Ptr, info:Ptr, infoLength:I64):Int16;
 	@:deprecated
@@ -56,13 +60,28 @@ import hxmc.unsafe.UInt16;
 	@:deprecated
 	public static function InvokeSpeechSyncUPP(chan:Ptr, refCon:Ptr, syncMessage:Int, userUPP:Ptr):Void;
 	@:deprecated
-	public static function InvokeSpeechTextDoneUPP(chan:Ptr, refCon:Ptr, nextBuf:Ptr, byteLen:Ptr, controlFlags:Ptr, userUPP:Ptr):Void;
+	@:hxmc.len(byteLen, 1)
+	public static function InvokeSpeechTextDoneUPP(chan:Ptr, refCon:Ptr, nextBuf:Ptr, byteLen:Span<I64>, controlFlags:Ptr, userUPP:Ptr):Void;
 	@:deprecated
 	public static function InvokeSpeechWordUPP(chan:Ptr, refCon:Ptr, wordPos:I64, wordLen:UInt16, userUPP:Ptr):Void;
 	@:deprecated
-	public static function MakeVoiceSpec(creator:Int, id:Int, voice:Ptr):Int16;
+	@:hxmc.len(voice, 1)
+	public static function MakeVoiceSpec(creator:Int, id:Int, voice:Span<VoiceSpec>):Int16;
 	@:deprecated
-	public static function NewSpeechChannel(voice:Ptr, chan:Ptr):Int16;
+	@:hxmc.len(voice, 1)
+	public static function NewSpeechChannel(voice:Span<VoiceSpec>, chan:Ptr):Int16;
+	@:deprecated
+	public static function NewSpeechDoneUPP(userRoutine:Ptr):Ptr;
+	@:deprecated
+	public static function NewSpeechErrorUPP(userRoutine:Ptr):Ptr;
+	@:deprecated
+	public static function NewSpeechPhonemeUPP(userRoutine:Ptr):Ptr;
+	@:deprecated
+	public static function NewSpeechSyncUPP(userRoutine:Ptr):Ptr;
+	@:deprecated
+	public static function NewSpeechTextDoneUPP(userRoutine:Ptr):Ptr;
+	@:deprecated
+	public static function NewSpeechWordUPP(userRoutine:Ptr):Ptr;
 	@:deprecated
 	public static function PauseSpeechAt(chan:Ptr, whereToPause:Int):Int16;
 	@:deprecated

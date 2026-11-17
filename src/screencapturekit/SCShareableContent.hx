@@ -5,19 +5,32 @@ import foundation.NSArray;
 import foundation.NSError;
 import objc.NSObject;
 
-@:hxmc.framework("ScreenCaptureKit") @:hxmc.objc extern class SCShareableContent extends NSObject {
+@:hxmc.framework("ScreenCaptureKit") @:hxmc.objc @:hxmc.available(macos >= 12.3, maccatalyst >= 18.2) extern class SCShareableContent extends NSObject {
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	static function alloc():SCShareableContent;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	var windows(get, never) : NSArray<SCWindow>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	function get_windows():NSArray<SCWindow>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	var displays(get, never) : NSArray<SCDisplay>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	function get_displays():NSArray<SCDisplay>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	var applications(get, never) : NSArray<SCRunningApplication>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	function get_applications():NSArray<SCRunningApplication>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	static function getShareableContentWithCompletionHandler(completionHandler:(Null<SCShareableContent>, Null<NSError>) -> Void):Void;
+	@:hxmc.available(macos >= 14.4, maccatalyst >= 18.2)
 	static function getCurrentProcessShareableContentWithCompletionHandler(completionHandler:(Null<SCShareableContent>, Null<NSError>) -> Void):Void;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	static overload function getShareableContentExcludingDesktopWindows(excludeDesktopWindows:Bool, onScreenWindowsOnly:Bool, completionHandler:(Null<SCShareableContent>, Null<NSError>) -> Void):Void;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	static overload function getShareableContentExcludingDesktopWindows(excludeDesktopWindows:Bool, onScreenWindowsOnlyBelowWindow:SCWindow, completionHandler:(Null<SCShareableContent>, Null<NSError>) -> Void):Void;
 	@:selector("getShareableContentExcludingDesktopWindows:onScreenWindowsOnlyAboveWindow:completionHandler:")
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	static function getShareableContentExcludingDesktopWindowsOnScreenWindowsOnlyAboveWindowCompletionHandler(excludeDesktopWindows:Bool, onScreenWindowsOnlyAboveWindow:SCWindow, completionHandler:(Null<SCShareableContent>, Null<NSError>) -> Void):Void;
+	@:hxmc.available(macos >= 14.0, maccatalyst >= 18.2)
 	static function infoForFilter(filter:SCContentFilter):SCShareableContentInfo;
 }

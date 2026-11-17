@@ -8,6 +8,7 @@ import foundation.NSArray;
 import foundation.NSString;
 import foundation.NSStringArg;
 import hxmc.I64;
+import hxmc.Span;
 import hxmc.unsafe.Ptr;
 import objc.NSObject;
 
@@ -16,8 +17,10 @@ import objc.NSObject;
 	public static function FSEventStreamCopyDescription(streamRef:Ptr):NSString;
 	@:hxmc.retained
 	public static function FSEventStreamCopyPathsBeingWatched(streamRef:Ptr):NSArray;
-	public static function FSEventStreamCreate(allocator:Null<CFAllocator>, callback:Ptr, context:Ptr, pathsToWatch:NSArray, sinceWhen:I64, latency:Float, flags:Int):Ptr;
-	public static function FSEventStreamCreateRelativeToDevice(allocator:Null<CFAllocator>, callback:Ptr, context:Ptr, deviceToWatch:Int, pathsToWatchRelativeToDevice:NSArray, sinceWhen:I64, latency:Float, flags:Int):Ptr;
+	@:hxmc.len(context, 1)
+	public static function FSEventStreamCreate(allocator:Null<CFAllocator>, callback:(Ptr, Ptr, I64, Ptr, Ptr, Ptr) -> Void, context:Span<FSEventStreamContext>, pathsToWatch:NSArray, sinceWhen:I64, latency:Float, flags:Int):Ptr;
+	@:hxmc.len(context, 1)
+	public static function FSEventStreamCreateRelativeToDevice(allocator:Null<CFAllocator>, callback:(Ptr, Ptr, I64, Ptr, Ptr, Ptr) -> Void, context:Span<FSEventStreamContext>, deviceToWatch:Int, pathsToWatchRelativeToDevice:NSArray, sinceWhen:I64, latency:Float, flags:Int):Ptr;
 	public static function FSEventStreamFlushAsync(streamRef:Ptr):I64;
 	public static function FSEventStreamFlushSync(streamRef:Ptr):Void;
 	public static function FSEventStreamGetDeviceBeingWatched(streamRef:Ptr):Int;

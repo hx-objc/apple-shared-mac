@@ -4,7 +4,9 @@ package coremediaio;
 import hxmc.I64;
 
 enum abstract CMIOExtensionStreamDirection(I64) to I64 {
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var Source = 0;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var Sink = 1;
 	inline function new(v:I64) this = v;
 }

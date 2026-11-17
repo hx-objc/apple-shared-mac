@@ -12,6 +12,7 @@ import hxmc.unsafe.Ptr;
 	public var AnchorCerts : Ptr;
 	public var DBList : Ptr;
 	public var CallerCredentials : Ptr;
+	@:hxmc.unsafe
 	public inline function new(Policy:Cssm_tp_policyinfo, VerifyTime:Ptr, VerificationAbortOn:Int, CallbackWithVerifiedCert:Ptr, NumberOfAnchorCerts:Int, AnchorCerts:Ptr, DBList:Ptr, CallerCredentials:Ptr) {
 		this.Policy = Policy;
 		this.VerifyTime = VerifyTime;

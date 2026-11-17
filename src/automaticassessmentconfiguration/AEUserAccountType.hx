@@ -4,8 +4,11 @@ package automaticassessmentconfiguration;
 import hxmc.I64;
 
 enum abstract AEUserAccountType(I64) to I64 {
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	var Any = 0;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	var Standard = 1;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	var Guest = 2;
 	inline function new(v:I64) this = v;
 }

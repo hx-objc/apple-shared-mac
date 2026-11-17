@@ -93,20 +93,36 @@ final class PMDefinitionsConstants {
 	public static inline var kPMDuplexDefault : Int = 1;
 	public static inline var kPMDestinationTypeDefault : Int = 1;
 	public static inline var kPMColorSpaceModelCount : Int = 4;
+	@:hxmc.unsafe(gc)
 	public static final kPMPPDDescriptionType : NSString = cast hxmc.objc.Strings.toNSString("PMPPDDescriptionType");
+	@:hxmc.unsafe(gc)
 	public static final kPMDocumentFormatDefault : NSString = cast hxmc.objc.Strings.toNSString("com.apple.documentformat.default");
+	@:hxmc.unsafe(gc)
 	public static final kPMDocumentFormatPDF : NSString = cast hxmc.objc.Strings.toNSString("application/pdf");
+	@:hxmc.unsafe(gc)
 	public static final kPMDocumentFormatPostScript : NSString = cast hxmc.objc.Strings.toNSString("application/postscript");
+	@:hxmc.unsafe(gc)
 	public static final kPMGraphicsContextDefault : NSString = cast hxmc.objc.Strings.toNSString("com.apple.graphicscontext.default");
+	@:hxmc.unsafe(gc)
 	public static final kPMGraphicsContextCoreGraphics : NSString = cast hxmc.objc.Strings.toNSString("com.apple.graphicscontext.coregraphics");
+	@:hxmc.unsafe(gc)
 	public static final kPDFWorkflowItemURLKey : NSString = cast hxmc.objc.Strings.toNSString("itemURL");
+	@:hxmc.unsafe(gc)
 	public static final kPDFWorkflowDisplayNameKey : NSString = cast hxmc.objc.Strings.toNSString("displayName");
+	@:hxmc.unsafe(gc)
 	public static final kPDFWorkflowItemsKey : NSString = cast hxmc.objc.Strings.toNSString("items");
+	@:hxmc.unsafe(gc)
 	public static final kPDFWorkflowModifiedKey : NSString = cast hxmc.objc.Strings.toNSString("wasModifiedInline");
+	@:hxmc.unsafe(gc)
 	public static final kPMPrintSelectionTitleKey : NSString = cast hxmc.objc.Strings.toNSString("com.apple.printSelection.title");
+	@:hxmc.unsafe(gc)
 	public static final kPMPresetGraphicsTypeKey : NSString = cast hxmc.objc.Strings.toNSString("com.apple.print.preset.graphicsType");
+	@:hxmc.unsafe(gc)
 	public static final kPMPresetGraphicsTypePhoto : NSString = cast hxmc.objc.Strings.toNSString("Photo");
+	@:hxmc.unsafe(gc)
 	public static final kPMPresetGraphicsTypeAll : NSString = cast hxmc.objc.Strings.toNSString("All");
+	@:hxmc.unsafe(gc)
 	public static final kPMPresetGraphicsTypeGeneral : NSString = cast hxmc.objc.Strings.toNSString("General");
+	@:hxmc.unsafe(gc)
 	public static final kPMPresetGraphicsTypeNone : NSString = cast hxmc.objc.Strings.toNSString("None");
 }

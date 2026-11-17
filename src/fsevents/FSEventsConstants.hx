@@ -14,6 +14,7 @@ final class FSEventsConstants {
 	public static inline var kFSEventStreamCreateFlagUseExtendedData : Int = 64;
 	public static inline var kFSEventStreamCreateFlagFullHistory : Int = 128;
 	public static inline var kFSEventStreamCreateWithDocID : Int = 256;
+	@:hxmc.available(macos >= 26.0, ios >= 26.0, maccatalyst >= 26.0)
 	public static inline var kFSEventStreamCreateDeviceState : Int = 512;
 	public static inline var kFSEventStreamEventFlagNone : Int = 0;
 	public static inline var kFSEventStreamEventFlagMustScanSubDirs : Int = 1;
@@ -40,7 +41,10 @@ final class FSEventsConstants {
 	public static inline var kFSEventStreamEventFlagItemIsLastHardlink : Int = 2097152;
 	public static inline var kFSEventStreamEventFlagItemCloned : Int = 4194304;
 	public static inline var kFSEventStreamEventIdSinceNow : Int = -1;
+	@:hxmc.unsafe(gc)
 	public static final kFSEventStreamEventExtendedDataPathKey : NSString = cast hxmc.objc.Strings.toNSString("path");
+	@:hxmc.unsafe(gc)
 	public static final kFSEventStreamEventExtendedFileIDKey : NSString = cast hxmc.objc.Strings.toNSString("fileID");
+	@:hxmc.unsafe(gc)
 	public static final kFSEventStreamEventExtendedDocIDKey : NSString = cast hxmc.objc.Strings.toNSString("docID");
 }

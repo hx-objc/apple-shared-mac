@@ -17,6 +17,7 @@ import hxmc.unsafe.Ptr;
 	public var options1 : Int;
 	public var options2 : Int;
 	public var pluginState : TECPluginStateRec;
+	@:hxmc.unsafe
 	public inline function new(pluginRec:Ptr, sourceEncoding:Int, destEncoding:Int, reserved1:Int, reserved2:Int, bufferContext:TECBufferContextRec, contextRefCon:Ptr, conversionProc:Ptr, flushProc:Ptr, clearContextInfoProc:Ptr, options1:Int, options2:Int, pluginState:TECPluginStateRec) {
 		this.pluginRec = pluginRec;
 		this.sourceEncoding = sourceEncoding;

@@ -6,17 +6,26 @@ import hxmc.objc.Id;
 import hxmc.unsafe.Ptr;
 import objc.NSObject;
 
-@:hxmc.framework("AutomaticAssessmentConfiguration") @:hxmc.objc extern class AEAssessmentBinaryExecutableConfiguration extends NSObject implements NSCopying {
+@:hxmc.framework("AutomaticAssessmentConfiguration") @:hxmc.objc @:hxmc.available(macos >= 27.0, maccatalyst >= 27.0) extern class AEAssessmentBinaryExecutableConfiguration extends NSObject implements NSCopying {
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	static function alloc():AEAssessmentBinaryExecutableConfiguration;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	var allowsNetworkAccess(get, set) : Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function get_allowsNetworkAccess():Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function set_allowsNetworkAccess(v:Bool):Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	var required(get, set) : Bool;
 	@:selector("isRequired")
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function get_required():Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	function set_required(v:Bool):Bool;
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	override function init():AEAssessmentBinaryExecutableConfiguration;
 	@:selector("new")
+	@:hxmc.available(macos >= 27.0, maccatalyst >= 27.0)
 	static function new_():AEAssessmentBinaryExecutableConfiguration;
 	function copyWithZone(zone:Ptr):Id;
 }

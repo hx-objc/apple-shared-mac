@@ -12,6 +12,7 @@ import hxmc.unsafe.Ptr;
 	public var encodingInputBufferEnd : Ptr;
 	public var encodingOutputBuffer : Ptr;
 	public var encodingOutputBufferEnd : Ptr;
+	@:hxmc.unsafe
 	public inline function new(textInputBuffer:Ptr, textInputBufferEnd:Ptr, textOutputBuffer:Ptr, textOutputBufferEnd:Ptr, encodingInputBuffer:Ptr, encodingInputBufferEnd:Ptr, encodingOutputBuffer:Ptr, encodingOutputBufferEnd:Ptr) {
 		this.textInputBuffer = textInputBuffer;
 		this.textInputBufferEnd = textInputBufferEnd;

@@ -61,6 +61,7 @@ final class AudioHardwareConstants {
 	public static inline var kAudioDevicePropertyProcessMute : Int = 1634758765;
 	public static inline var kAudioDevicePropertyVoiceActivityDetectionEnable : Int = 1983996971;
 	public static inline var kAudioDevicePropertyVoiceActivityDetectionState : Int = 1983997011;
+	@:hxmc.available(macos >= 27.0)
 	public static inline var kAudioDevicePropertySuggestedReferenceDevice : Int = 1701802596;
 	public static inline var kAudioDevicePropertyJackIsConnected : Int = 1784767339;
 	public static inline var kAudioDevicePropertyVolumeScalar : Int = 1987013741;
@@ -123,10 +124,15 @@ final class AudioHardwareConstants {
 	public static inline var kAudioAggregateDriftCompensationHighQuality : Int = 96;
 	public static inline var kAudioAggregateDriftCompensationMaxQuality : Int = 127;
 	public static inline var kAudioSubDeviceClassID : Int = 1634956642;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	public static inline var kAudioSubDeviceDriftCompensationMinQuality : Int = 0;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	public static inline var kAudioSubDeviceDriftCompensationLowQuality : Int = 32;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	public static inline var kAudioSubDeviceDriftCompensationMediumQuality : Int = 64;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	public static inline var kAudioSubDeviceDriftCompensationHighQuality : Int = 96;
+	@:hxmc.available(macos >= 13.0, ios >= 16.0, maccatalyst >= 16.0)
 	public static inline var kAudioSubDeviceDriftCompensationMaxQuality : Int = 127;
 	public static inline var kAudioSubDevicePropertyExtraLatency : Int = 2020373603;
 	public static inline var kAudioSubDevicePropertyDriftCompensation : Int = 1685218932;

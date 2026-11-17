@@ -7,6 +7,7 @@ import hxmc.unsafe.Ptr;
 	public var krbNotAllowed : Int;
 	public var numberOfEntries : Int;
 	public var policyEntry : Ptr;
+	@:hxmc.unsafe
 	public inline function new(krbNotAllowed:Int, numberOfEntries:Int, policyEntry:Ptr) {
 		this.krbNotAllowed = krbNotAllowed;
 		this.numberOfEntries = numberOfEntries;

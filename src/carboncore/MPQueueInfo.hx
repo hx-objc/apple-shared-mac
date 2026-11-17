@@ -15,6 +15,7 @@ import hxmc.unsafe.Ptr;
 	public var p1 : Ptr;
 	public var p2 : Ptr;
 	public var p3 : Ptr;
+	@:hxmc.unsafe
 	public inline function new(version:Int, processID:Ptr, queueName:Int, nWaiting:I64, waitingTaskID:Ptr, nMessages:I64, nReserved:I64, p1:Ptr, p2:Ptr, p3:Ptr) {
 		this.version = version;
 		this.processID = processID;

@@ -6,6 +6,7 @@ import hxmc.unsafe.Ptr;
 @:hxmc.struct class Cssm_spi_ac_funcs {
 	public var AuthCompute : Ptr;
 	public var PassThrough : Ptr;
+	@:hxmc.unsafe
 	public inline function new(AuthCompute:Ptr, PassThrough:Ptr) {
 		this.AuthCompute = AuthCompute;
 		this.PassThrough = PassThrough;

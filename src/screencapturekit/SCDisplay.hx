@@ -5,14 +5,23 @@ import coregraphics.CGRect;
 import hxmc.I64;
 import objc.NSObject;
 
-@:hxmc.framework("ScreenCaptureKit") @:hxmc.objc extern class SCDisplay extends NSObject {
+@:hxmc.framework("ScreenCaptureKit") @:hxmc.objc @:hxmc.available(macos >= 12.3, maccatalyst >= 18.2) extern class SCDisplay extends NSObject {
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	static function alloc():SCDisplay;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	var displayID(get, never) : Int;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	function get_displayID():Int;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	var width(get, never) : I64;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	function get_width():I64;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	var height(get, never) : I64;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	function get_height():I64;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	var frame(get, never) : CGRect;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 18.2)
 	function get_frame():CGRect;
 }

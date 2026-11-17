@@ -6,6 +6,7 @@ import hxmc.unsafe.Ptr;
 @:hxmc.struct class AEDesc {
 	public var descriptorType : Int;
 	public var dataHandle : Ptr;
+	@:hxmc.unsafe
 	public inline function new(descriptorType:Int, dataHandle:Ptr) {
 		this.descriptorType = descriptorType;
 		this.dataHandle = dataHandle;

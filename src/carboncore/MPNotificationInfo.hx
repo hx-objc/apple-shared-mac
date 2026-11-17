@@ -14,6 +14,7 @@ import hxmc.unsafe.Ptr;
 	public var eventID : Ptr;
 	public var events : Int;
 	public var semaphoreID : Ptr;
+	@:hxmc.unsafe
 	public inline function new(version:Int, processID:Ptr, notificationName:Int, queueID:Ptr, p1:Ptr, p2:Ptr, p3:Ptr, eventID:Ptr, events:Int, semaphoreID:Ptr) {
 		this.version = version;
 		this.processID = processID;

@@ -17,6 +17,7 @@ import hxmc.unsafe.UInt8;
 	public var INDIV_AuthenticationInfo : Ptr;
 	public var KRSPFlags : Int;
 	public var KRSPExtensions : Ptr;
+	@:hxmc.unsafe
 	public inline function new(UserName:Cssm_kr_name, UserCertificate:Ptr, KRSCertChain:Ptr, LE_KRANum:UInt8, LE_KRACertChainList:Ptr, ENT_KRANum:UInt8, ENT_KRACertChainList:Ptr, INDIV_KRANum:UInt8, INDIV_KRACertChainList:Ptr, INDIV_AuthenticationInfo:Ptr, KRSPFlags:Int, KRSPExtensions:Ptr) {
 		this.UserName = UserName;
 		this.UserCertificate = UserCertificate;

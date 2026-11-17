@@ -8,6 +8,7 @@ import hxmc.unsafe.Ptr;
 	public var CLHandle : I64;
 	public var Cert : Ptr;
 	public var VerifyContext : Ptr;
+	@:hxmc.unsafe
 	public inline function new(CLHandle:I64, Cert:Ptr, VerifyContext:Ptr) {
 		this.CLHandle = CLHandle;
 		this.Cert = Cert;

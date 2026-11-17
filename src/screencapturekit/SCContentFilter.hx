@@ -6,35 +6,61 @@ import foundation.NSArray;
 import hxmc.unsafe.Float32;
 import objc.NSObject;
 
-@:hxmc.framework("ScreenCaptureKit") @:hxmc.objc extern class SCContentFilter extends NSObject {
+@:hxmc.framework("ScreenCaptureKit") @:hxmc.objc @:hxmc.available(macos >= 12.3, ios >= 27.0, maccatalyst >= 18.2) extern class SCContentFilter extends NSObject {
+	@:hxmc.available(macos >= 12.3, ios >= 27.0, maccatalyst >= 18.2)
 	static function alloc():SCContentFilter;
 	@:deprecated
+	@:hxmc.available(macos >= 14.0, ios >= 27.0, maccatalyst >= 18.2)
 	var streamType(get, never) : SCStreamType;
+	@:hxmc.available(macos >= 14.0, ios >= 27.0, maccatalyst >= 18.2)
 	function get_streamType():SCStreamType;
+	@:hxmc.available(macos >= 14.0, ios >= 27.0, maccatalyst >= 18.2)
 	var style(get, never) : SCShareableContentStyle;
+	@:hxmc.available(macos >= 14.0, ios >= 27.0, maccatalyst >= 18.2)
 	function get_style():SCShareableContentStyle;
+	@:hxmc.available(macos >= 14.0, ios >= 27.0, maccatalyst >= 18.2)
 	var pointPixelScale(get, never) : Float32;
+	@:hxmc.available(macos >= 14.0, ios >= 27.0, maccatalyst >= 18.2)
 	function get_pointPixelScale():Float32;
+	@:hxmc.available(macos >= 14.0, ios >= 27.0, maccatalyst >= 18.2)
 	var contentRect(get, never) : CGRect;
+	@:hxmc.available(macos >= 14.0, ios >= 27.0, maccatalyst >= 18.2)
 	function get_contentRect():CGRect;
+	@:hxmc.available(macos >= 14.2, ios >= 27.0, maccatalyst >= 18.2)
 	var includeMenuBar(get, set) : Bool;
+	@:hxmc.available(macos >= 14.2, ios >= 27.0, maccatalyst >= 18.2)
 	function get_includeMenuBar():Bool;
+	@:hxmc.available(macos >= 14.2, ios >= 27.0, maccatalyst >= 18.2)
 	function set_includeMenuBar(v:Bool):Bool;
+	@:hxmc.available(macos >= 15.2, ios >= 27.0, maccatalyst >= 18.2)
 	var includedDisplays(get, never) : NSArray<SCDisplay>;
+	@:hxmc.available(macos >= 15.2, ios >= 27.0, maccatalyst >= 18.2)
 	function get_includedDisplays():NSArray<SCDisplay>;
+	@:hxmc.available(macos >= 15.2, ios >= 27.0, maccatalyst >= 18.2)
 	var includedApplications(get, never) : NSArray<SCRunningApplication>;
+	@:hxmc.available(macos >= 15.2, ios >= 27.0, maccatalyst >= 18.2)
 	function get_includedApplications():NSArray<SCRunningApplication>;
+	@:hxmc.available(macos >= 15.2, ios >= 27.0, maccatalyst >= 18.2)
 	var includedWindows(get, never) : NSArray<SCWindow>;
+	@:hxmc.available(macos >= 15.2, ios >= 27.0, maccatalyst >= 18.2)
 	function get_includedWindows():NSArray<SCWindow>;
+	@:hxmc.available(macos >= 27.0, ios >= 27.0, maccatalyst >= 27.0)
 	var microphoneEnabled(get, never) : Bool;
 	@:selector("isMicrophoneEnabled")
+	@:hxmc.available(macos >= 27.0, ios >= 27.0, maccatalyst >= 27.0)
 	function get_microphoneEnabled():Bool;
+	@:hxmc.available(macos >= 12.3, ios >= 27.0, maccatalyst >= 18.2)
 	function initWithDesktopIndependentWindow(window:SCWindow):SCContentFilter;
+	@:hxmc.available(macos >= 12.3, ios >= 27.0, maccatalyst >= 18.2)
 	overload function initWithDisplay(display:SCDisplay, excludingWindows:NSArray<SCWindow>):SCContentFilter;
 	@:selector("initWithDisplay:includingWindows:")
+	@:hxmc.available(macos >= 12.3, ios >= 27.0, maccatalyst >= 18.2)
 	function initWithDisplayIncludingWindows(display:SCDisplay, includingWindows:NSArray<SCWindow>):SCContentFilter;
+	@:hxmc.available(macos >= 12.3, ios >= 27.0, maccatalyst >= 18.2)
 	overload function initWithDisplay(display:SCDisplay, includingApplications:NSArray<SCRunningApplication>, exceptingWindows:NSArray<SCWindow>):SCContentFilter;
 	@:selector("initWithDisplay:excludingApplications:exceptingWindows:")
+	@:hxmc.available(macos >= 12.3, ios >= 27.0, maccatalyst >= 18.2)
 	function initWithDisplayExcludingApplicationsExceptingWindows(display:SCDisplay, excludingApplications:NSArray<SCRunningApplication>, exceptingWindows:NSArray<SCWindow>):SCContentFilter;
+	@:hxmc.available(macos >= 12.3, ios >= 27.0, maccatalyst >= 18.2)
 	override function init():SCContentFilter;
 }

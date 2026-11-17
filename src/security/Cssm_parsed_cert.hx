@@ -7,6 +7,7 @@ import hxmc.unsafe.Ptr;
 	public var CertType : Int;
 	public var ParsedCertFormat : Int;
 	public var ParsedCert : Ptr;
+	@:hxmc.unsafe
 	public inline function new(CertType:Int, ParsedCertFormat:Int, ParsedCert:Ptr) {
 		this.CertType = CertType;
 		this.ParsedCertFormat = ParsedCertFormat;

@@ -4,8 +4,11 @@ package coremediaio;
 import hxmc.I64;
 
 enum abstract CMIOExtensionStreamClockType(I64) to I64 {
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var HostTime = 0;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var LinkedCoreAudioDeviceUID = 1;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var Custom = 2;
 	inline function new(v:I64) this = v;
 }

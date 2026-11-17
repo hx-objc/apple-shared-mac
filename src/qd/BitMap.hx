@@ -9,6 +9,7 @@ import hxmc.unsafe.Ptr;
 	public var baseAddr : Ptr;
 	public var rowBytes : Int16;
 	public var bounds : Rect;
+	@:hxmc.unsafe
 	public inline function new(baseAddr:Ptr, rowBytes:Int16, bounds:Rect) {
 		this.baseAddr = baseAddr;
 		this.rowBytes = rowBytes;

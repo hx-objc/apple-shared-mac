@@ -7,6 +7,7 @@ import hxmc.unsafe.Ptr;
 @:hxmc.struct class DERItem {
 	public var data : Ptr;
 	public var length : I64;
+	@:hxmc.unsafe
 	public inline function new(data:Ptr, length:I64) {
 		this.data = data;
 		this.length = length;

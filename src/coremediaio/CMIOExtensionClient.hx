@@ -8,13 +8,20 @@ import hxmc.objc.Id;
 import hxmc.unsafe.Ptr;
 import objc.NSObject;
 
-@:hxmc.framework("CoreMediaIO") @:hxmc.objc extern class CMIOExtensionClient extends NSObject implements NSCopying {
+@:hxmc.framework("CoreMediaIO") @:hxmc.objc @:hxmc.available(macos >= 12.3, maccatalyst >= 15.4) extern class CMIOExtensionClient extends NSObject implements NSCopying {
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	static function alloc():CMIOExtensionClient;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var clientID(get, never) : NSUUID;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_clientID():NSUUID;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 15.4)
 	var signingID(get, never) : Null<NSStringArg>;
+	@:hxmc.available(macos >= 13.0, maccatalyst >= 15.4)
 	function get_signingID():Null<NSStringArg>;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	var pid(get, never) : Int;
+	@:hxmc.available(macos >= 12.3, maccatalyst >= 15.4)
 	function get_pid():Int;
 	function copyWithZone(zone:Ptr):Id;
 }

@@ -8,6 +8,7 @@ import hxmc.unsafe.Ptr;
 	public var SemanticInformation : Int;
 	public var NumberOfAttributes : Int;
 	public var AttributeData : Ptr;
+	@:hxmc.unsafe
 	public inline function new(DataRecordType:Int, SemanticInformation:Int, NumberOfAttributes:Int, AttributeData:Ptr) {
 		this.DataRecordType = DataRecordType;
 		this.SemanticInformation = SemanticInformation;

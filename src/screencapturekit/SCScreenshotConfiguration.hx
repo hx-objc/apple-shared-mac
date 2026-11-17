@@ -8,45 +8,85 @@ import hxmc.I64;
 import objc.NSObject;
 import uniformtypeidentifiers.UTType;
 
-@:hxmc.framework("ScreenCaptureKit") @:hxmc.objc extern class SCScreenshotConfiguration extends NSObject {
+@:hxmc.framework("ScreenCaptureKit") @:hxmc.objc @:hxmc.available(macos >= 26.0, maccatalyst >= 26.0) extern class SCScreenshotConfiguration extends NSObject {
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	static function alloc():SCScreenshotConfiguration;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	var width(get, set) : I64;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	function get_width():I64;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	function set_width(v:I64):I64;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	var height(get, set) : I64;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	function get_height():I64;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	function set_height(v:I64):I64;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	var showsCursor(get, set) : Bool;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	function get_showsCursor():Bool;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	function set_showsCursor(v:Bool):Bool;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	var sourceRect(get, set) : CGRect;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	function get_sourceRect():CGRect;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	function set_sourceRect(v:CGRect):CGRect;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	var destinationRect(get, set) : CGRect;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	function get_destinationRect():CGRect;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	function set_destinationRect(v:CGRect):CGRect;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	var ignoreShadows(get, set) : Bool;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	function get_ignoreShadows():Bool;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	function set_ignoreShadows(v:Bool):Bool;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	var ignoreClipping(get, set) : Bool;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	function get_ignoreClipping():Bool;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	function set_ignoreClipping(v:Bool):Bool;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	var includeChildWindows(get, set) : Bool;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	function get_includeChildWindows():Bool;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	function set_includeChildWindows(v:Bool):Bool;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	var displayIntent(get, set) : SCScreenshotDisplayIntent;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	function get_displayIntent():SCScreenshotDisplayIntent;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	function set_displayIntent(v:SCScreenshotDisplayIntent):SCScreenshotDisplayIntent;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	var dynamicRange(get, set) : SCScreenshotDynamicRange;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	function get_dynamicRange():SCScreenshotDynamicRange;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	function set_dynamicRange(v:SCScreenshotDynamicRange):SCScreenshotDynamicRange;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	var contentType(get, set) : UTType;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	function get_contentType():UTType;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	function set_contentType(v:UTType):UTType;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	var fileURL(get, set) : Null<NSURL>;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	function get_fileURL():Null<NSURL>;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	function set_fileURL(v:Null<NSURL>):Null<NSURL>;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	static var supportedContentTypes(get, never) : NSArray<UTType>;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	static function get_supportedContentTypes():NSArray<UTType>;
+	@:hxmc.available(macos >= 26.0, maccatalyst >= 26.0)
 	override function init():SCScreenshotConfiguration;
 }
